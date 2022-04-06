@@ -13,13 +13,13 @@ public class StaticVariable {
     public void getData1(){
         System.out.println(empId1);
         System.out.println(empName1);
-        System.out.println(StaticVariable.company);
+        System.out.println(company);
     }
 
     public void getData2(){
         System.out.println(empId2);
         System.out.println(empName2);
-        System.out.println(StaticVariable.company);
+        System.out.println(company);
     }
 
     public static void main(String[] args) {
