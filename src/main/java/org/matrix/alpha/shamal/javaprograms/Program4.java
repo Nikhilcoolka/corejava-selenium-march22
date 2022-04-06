@@ -23,6 +23,5 @@ public class Program4 {
         StringBuilder str3 = new StringBuilder("Shamal");
         str3.append("Matale");
         System.out.println(str3);
-
     }
 }
