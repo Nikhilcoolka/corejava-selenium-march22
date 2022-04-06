@@ -9,7 +9,8 @@ public class TestFirstScript {
 
     public static void main(String[] args) throws InterruptedException {
 
-        WebDriver driver=new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().window().maximize();
 
@@ -24,11 +25,10 @@ public class TestFirstScript {
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[text()='Log in']")).click();
 
-        WebElement errorMessage=driver.findElement(By.xpath("\"//div[text()='Login was unsuccessful. Please correct the errors and try again.']\""));
-        boolean status=errorMessage.isDisplayed();
+        WebElement errorMessage = driver.findElement(By.xpath("//div[text()='Login was unsuccessful. Please correct the errors and try again.']"));
+        boolean status = errorMessage.isDisplayed();
 
-        if(status){
-
+        if (status) {
             System.out.println("Test case is pass");
         } else {
             System.out.println("Test case is fail");
