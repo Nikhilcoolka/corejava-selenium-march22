@@ -3,12 +3,12 @@ package org.matrix.lambda.akashgupta.javaconcepts.practiceprograms;
 public class StringReverseByWords {
     public static void reverseEachWords(String s) {
         String[] words = s.split(" ");
-        String result = "";
-        for (int i = 0; i < words.length; i++) {
-            for (int j = words[i].length() - 1; j >= 0; j--) {
-                result += words[i].charAt(j);
+        StringBuilder result = new StringBuilder();
+        for (String word : words) {
+            for (int j = word.length() - 1; j >= 0; j--) {
+                result.append(word.charAt(j));
             }
-            result += " ";
+            result.append(' ');
         }
         System.out.println("original string:" + s);
         System.out.println("result:" + result);
