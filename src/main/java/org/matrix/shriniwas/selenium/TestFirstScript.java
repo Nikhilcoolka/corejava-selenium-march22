@@ -12,6 +12,10 @@ public class TestFirstScript {
         System.setProperty("webdriver.chrome.driver", "E:\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://demo.nopcommerce.com/");
+//        Options op = driver.manage();
+//        Window win = op.window();
+//        win.maximize();
+
         driver.manage().window().maximize();
 
         driver.findElement(By.xpath("//a[text()='Log in']")).click();
