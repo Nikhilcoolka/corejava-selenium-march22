@@ -1,4 +1,4 @@
-package org.matrix.sigma.prajakta;
+package org.matrix.sigma.prajakta.corejava;
 
 public class LocalVariable {
     //local variable are access only in methods,constructor and blocks.
