@@ -6,6 +6,10 @@ public class EmployeeDemo {
     public String empName="Prajakta";
     public String empCompany="Cognizant";
 
+    public void m1(){
+        System.out.println("I am in Employee m1 method....");
+    }
+
     void getData(){
         System.out.println("Employee ID:-"+empId);
         System.out.println("Employee Name:-"+empName);
