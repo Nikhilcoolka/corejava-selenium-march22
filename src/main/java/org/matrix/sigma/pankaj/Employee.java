@@ -1,15 +1,14 @@
 package org.matrix.sigma.pankaj;
 
 public class Employee {
-    int empId = 001;
-    String empname = "PANKAJ";     // this employee class use in instance variable by object creation
+    public int empId = 001;
+    public String empname = "PANKAJ";     // this employee class use in instance variable by object creation
+    public static String company = "tcs";
 
-    public void getdata(){
+    public void getdata() {
         System.out.println(empId);
         System.out.println(empname);
     }
 
-    public static void main(String[] args) {
-        System.out.println("");
-    }
+
 }
