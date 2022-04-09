@@ -1,7 +1,5 @@
 package org.matrix.omega.neha.javaprograms;
 
-import org.openqa.selenium.json.JsonOutput;
-
 //Program to reverse strings in sentence.
 public class Program2 {
     public static void main(String[] args) {
@@ -13,4 +11,5 @@ public class Program2 {
         for (int i = strA.length - 1; i >= 0; i--) {
             System.out.println(strA[i]);
         }
-    }}
+    }
+}
