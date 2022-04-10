@@ -21,6 +21,10 @@ public class StringMethods {
         String abc = "      Welcome      ";
         System.out.println("Trim the variable: " + abc.trim());
 
+        String emp1 = "Corejava";
+        String emp2 = "Corejava";
+        System.out.println("Equals = " + emp1.equals(emp2));
+
 
     }
 }
