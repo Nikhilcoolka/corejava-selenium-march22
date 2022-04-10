@@ -41,6 +41,11 @@ public class JavaDataTypes {
         System.out.println("--------------------------------------------------");
 
 
+        boolean isJavafun = true;
+        System.out.println(isJavafun);
+        System.out.println("boolean size = 1 bit");
+        System.out.println("Stores true or false values");
+        System.out.println("--------------------------------------------------");
 
 
 
