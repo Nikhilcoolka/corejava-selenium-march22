@@ -17,3 +17,15 @@ public class TestMethodsConceptNew1 {
     }
 // "this" can be used to refer current class instance variable.
 
+
+
+
+//-------Types of methods---------
+// 4. Sequence of Parameters data type does matter, should be assign value in parameter sequence
+
+    public void addition(float myFloatNum,boolean myBool,char myLetter) {
+        System.out.println(myFloatNum);
+        System.out.println(myBool);
+        System.out.println(myLetter);
+    }
+
