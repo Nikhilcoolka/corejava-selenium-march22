@@ -24,6 +24,18 @@ public class TestString1 {
         int returnValue1 = System.identityHashCode(str1);
         System.out.println(returnValue1);
 
+        int returnValue2 = System.identityHashCode(str2);
+        System.out.println(returnValue2);
+
+        int returnValue3 = System.identityHashCode(str3);
+        System.out.println(returnValue3);
+
+        int returnValue4 = System.identityHashCode(str4);
+        System.out.println(returnValue4);
+
+        System.out.println("-----------------------------------");
+
+
 
     }
 }
