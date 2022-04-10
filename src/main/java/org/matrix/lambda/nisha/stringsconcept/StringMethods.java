@@ -39,6 +39,13 @@ public class StringMethods {
         String box = "Deepakkumar";
         System.out.println("Replace all ==> " + box.replaceAll("Deepak","DEEPAK"));
 
+        String baby = "Hello world";
+        //012345678910
+        System.out.println("Index of : " + baby.indexOf('l'));
+        System.out.println("Lat index of : " + baby.lastIndexOf('o'));
+        System.out.println("Some part of String == " + baby.substring(6,11));           // (11-1=10)
+
+        System.out.println();
 
 
     }
