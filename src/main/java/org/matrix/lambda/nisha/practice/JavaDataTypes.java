@@ -47,7 +47,10 @@ public class JavaDataTypes {
         System.out.println("Stores true or false values");
         System.out.println("--------------------------------------------------");
 
-
+        char name = 'N';
+        System.out.println(name);
+        System.out.println("char size = 2 byte");
+        System.out.println("Stores a single character/letter or ASCII values");
 
 
     }
