@@ -12,5 +12,16 @@ public class TestString2 {
         System.out.println("Address of str1: " + System.identityHashCode(str1));
         System.out.println("Address of str2: " + System.identityHashCode(str2));
 
+
+        String str3 = "Singam";          // Hashcode = 1808253012
+        String str4 = "Singam";          // Hashcode = 1808253012
+        // To get the memory address location of string variables
+        System.out.println("Address of str3: " + System.identityHashCode(str3));
+        System.out.println("Address of str4: " + System.identityHashCode(str4));
+
     }
 }
+
+
+
+
