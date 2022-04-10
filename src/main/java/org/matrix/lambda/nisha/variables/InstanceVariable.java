@@ -10,6 +10,4 @@ public class InstanceVariable {
         System.out.println("instance variable in instance method = "+age);
     }
 
-
-    }
-
+}
