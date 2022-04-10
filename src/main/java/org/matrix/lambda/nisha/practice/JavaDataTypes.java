@@ -10,6 +10,12 @@ public class JavaDataTypes {
         System.out.println("Stores whole numbers from -128 to 127");
         System.out.println("--------------------------------------------------");
 
+        short num2 = 5000;
+        System.out.println(num2);
+        System.out.println("short size = 2 byte");
+        System.out.println("Stores whole numbers from -32,768 to 32,767");
+        System.out.println("--------------------------------------------------");
+
 
     }
 }
