@@ -20,5 +20,10 @@ public class TestString1 {
 
         System.out.println("-------------------------------");
 
+        // Returns the HashCode
+        int returnValue1 = System.identityHashCode(str1);
+        System.out.println(returnValue1);
+
+
     }
 }
