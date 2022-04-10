@@ -15,6 +15,9 @@ public class StringMethods {
         String myFavColor = "YELLOW";
         System.out.println("To Lower Case => " + myFavColor.toLowerCase());
 
+        String mobileCompany = "Readme note 10s";
+        System.out.println("To Upper Case - " + mobileCompany.toUpperCase());
+
 
     }
 }
