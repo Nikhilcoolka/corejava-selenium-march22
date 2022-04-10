@@ -35,6 +35,9 @@ public class TestString1 {
 
         System.out.println("-----------------------------------");
 
+        // equals check the value of objects
+        System.out.println(str1.equals(str2));      // Vijayalaxmi = Vijayalaxmi
+        System.out.println(str3.equals(str4));      // Singam = Singam
 
 
     }
