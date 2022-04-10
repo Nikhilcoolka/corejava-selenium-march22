@@ -25,6 +25,11 @@ public class StringMethods {
         String emp2 = "Corejava";
         System.out.println("Equals = " + emp1.equals(emp2));
 
+        String xyz = "NISHA";
+        String xyz1 = "nisha";
+        System.out.println("Equals Ignore Case == " + xyz.equalsIgnoreCase(xyz1));
+
+
 
     }
 }
