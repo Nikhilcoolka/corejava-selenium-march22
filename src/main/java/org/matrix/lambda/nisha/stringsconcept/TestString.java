@@ -16,6 +16,11 @@ public class TestString {
 
         System.out.println("----------------------------");
 
+        String emp1 = "Microsoft";
+        String emp2 = "Microsoft";
+        String emp3 = "Microsoft";
+        emp3 = emp3.concat("IBM");
+
     }
 }
 
