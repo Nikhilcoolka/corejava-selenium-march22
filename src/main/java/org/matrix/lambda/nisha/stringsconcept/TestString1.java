@@ -14,9 +14,16 @@ public class TestString1 {
         String str3 = "Singam";          // Hashcode = 1808253012
         String str4 = "Singam";          // Hashcode = 1808253012
 
+        System.out.println(("str1 = ") + str1);
+        System.out.println(("str2 = ") + str2);
+        System.out.println(("str3 = ") + str3);
+        System.out.println(("str4 = ") + str4);
+
+        System.out.println("-------------------------------");
+
         // "==" checks the references ie hashcodes
-        System.out.println(str1 == str2);           // Hashcode is different = False
-        System.out.println(str3 == str4);           // Hashcode is same = True
+        System.out.println("str1 == str2  ---> " + (str1 == str2));           // Hashcode is different = False
+        System.out.println(("str3 == str4 ---> ") + (str3 == str4));           // Hashcode is same = True
 
         System.out.println("-------------------------------");
 
