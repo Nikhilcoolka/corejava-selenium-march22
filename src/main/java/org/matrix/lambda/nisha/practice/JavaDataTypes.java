@@ -34,6 +34,15 @@ public class JavaDataTypes {
         System.out.println("Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits");
         System.out.println("--------------------------------------------------");
 
+        double num6 = 66.87d;
+        System.out.println(num6);
+        System.out.println("double size = 8 byte");
+        System.out.println("Stores fractional numbers. Sufficient for storing 15 decimal digits");
+        System.out.println("--------------------------------------------------");
+
+
+
+
 
 
     }
