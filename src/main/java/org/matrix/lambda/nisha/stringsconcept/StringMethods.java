@@ -33,6 +33,8 @@ public class StringMethods {
         //01234 //
         System.out.println("Character at : " + my.charAt(3));       // a
 
+        String name = "LAPTOP";
+        System.out.println("Replace a single char = " + name.replace('P','n'));
 
 
 
