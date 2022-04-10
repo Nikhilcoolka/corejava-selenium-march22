@@ -36,6 +36,9 @@ public class StringMethods {
         String name = "LAPTOP";
         System.out.println("Replace a single char = " + name.replace('P','n'));
 
+        String box = "Deepakkumar";
+        System.out.println("Replace all ==> " + box.replaceAll("Deepak","DEEPAK"));
+
 
 
     }
