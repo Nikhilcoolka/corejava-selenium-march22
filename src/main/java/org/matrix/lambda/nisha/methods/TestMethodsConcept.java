@@ -17,5 +17,23 @@ public class TestMethodsConcept {
         System.out.println("Im in static b method ");
     }
 
+
+
+
+    //-------Types of methods---------
+    // 2. Method With Parameters
+
+    public void c(String abc) {
+        System.out.println("My Favourite car name is " + abc);
+    }
+
+    public static void main(String[] args) {
+        TestMethodsConcept ref = new TestMethodsConcept();
+        ref.a();                          // method calling by using ref variable
+        //TestMethodsConcept.b();       // method calling by using class name
+        b();
+
+        ref.c("Rolls Royce");         // passing the value to the method
+    }
 }
 
