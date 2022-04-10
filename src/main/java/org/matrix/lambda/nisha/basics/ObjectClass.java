@@ -4,7 +4,7 @@ public class ObjectClass {
 
     public static void main(String[] args) {
 
-    /*    Classes of Object
+    /*    Object Class Methods
         1. clone()
         2. equals()
         3. hashCode()
