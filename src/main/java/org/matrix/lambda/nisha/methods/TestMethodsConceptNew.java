@@ -17,6 +17,10 @@ public class TestMethodsConceptNew {
     }
     // "this" can be used to refer current class instance variable.
 
+    public static void main(String[] args) {
+        TestMethodsConceptNew add = new TestMethodsConceptNew();
+        add.addition(3,6);
+    }
 
 
 }
