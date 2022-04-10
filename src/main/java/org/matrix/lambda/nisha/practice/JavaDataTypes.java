@@ -28,6 +28,12 @@ public class JavaDataTypes {
         System.out.println("Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807");
         System.out.println("--------------------------------------------------");
 
+        float num5 = 15.6f;
+        System.out.println(num5);
+        System.out.println("float size = 4 byte");
+        System.out.println("Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits");
+        System.out.println("--------------------------------------------------");
+
 
 
     }
