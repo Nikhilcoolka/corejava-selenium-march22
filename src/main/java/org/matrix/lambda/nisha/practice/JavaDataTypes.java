@@ -22,6 +22,12 @@ public class JavaDataTypes {
         System.out.println("Stores whole numbers from -2,147,483,648 to 2,147,483,647\n");
         System.out.println("--------------------------------------------------");
 
+        long num4 = 54000000L;
+        System.out.println(num4);
+        System.out.println("long size = 8 byte");
+        System.out.println("Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807");
+        System.out.println("--------------------------------------------------");
+
 
 
     }
