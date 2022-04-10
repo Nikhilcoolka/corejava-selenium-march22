@@ -9,6 +9,7 @@ public class TestString {
         String str1 = "Nisha";                          // 1.String Literal(SCP = String Constant Pool)
         String str2 = new String("Nisha");      //  2.Object Creation
         System.out.println(str1);
+        System.out.println(str2);
 
         String str3 = "Deepak" ;
         str3 =str3.concat("Kumar");
