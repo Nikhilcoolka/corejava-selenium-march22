@@ -16,6 +16,13 @@ public class JavaDataTypes {
         System.out.println("Stores whole numbers from -32,768 to 32,767");
         System.out.println("--------------------------------------------------");
 
+        int num3 = 700000;
+        System.out.println(num3);
+        System.out.println("int size = 4 byte");
+        System.out.println("Stores whole numbers from -2,147,483,648 to 2,147,483,647\n");
+        System.out.println("--------------------------------------------------");
+
+
 
     }
 }
