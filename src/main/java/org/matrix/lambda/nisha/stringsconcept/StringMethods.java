@@ -11,4 +11,10 @@ public class StringMethods {
         String object = "Mobile";
         System.out.println("Length of String = " + object.length());
         System.out.println(args.length);
+
+        String myFavColor = "YELLOW";
+        System.out.println("To Lower Case => " + myFavColor.toLowerCase());
+
+
+    }
 }
