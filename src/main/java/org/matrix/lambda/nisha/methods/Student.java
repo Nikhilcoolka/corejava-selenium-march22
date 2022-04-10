@@ -13,6 +13,10 @@ public class Student {
             fee=fee;
         }
 
+    public void display() {
+        System.out.println(rollno+" "+name+" "+fee);
+    }
+}
 
     }
 
