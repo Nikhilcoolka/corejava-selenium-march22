@@ -29,6 +29,11 @@ public class StringMethods {
         String xyz1 = "nisha";
         System.out.println("Equals Ignore Case == " + xyz.equalsIgnoreCase(xyz1));
 
+        String my = "Kajal";
+        //01234 //
+        System.out.println("Character at : " + my.charAt(3));       // a
+
+
 
 
     }
