@@ -1,5 +1,7 @@
 package org.matrix.lambda.nisha.stringsconcept;
 
+import java.lang.String;
+import java.lang.System;
 
 public class TestString2 {
 
@@ -11,5 +13,4 @@ public class TestString2 {
         System.out.println("Address of str2: " + System.identityHashCode(str2));
 
     }
-
 }
