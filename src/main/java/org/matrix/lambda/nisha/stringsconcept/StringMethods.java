@@ -18,6 +18,9 @@ public class StringMethods {
         String mobileCompany = "Readme note 10s";
         System.out.println("To Upper Case - " + mobileCompany.toUpperCase());
 
+        String abc = "      Welcome      ";
+        System.out.println("Trim the variable: " + abc.trim());
+
 
     }
 }
