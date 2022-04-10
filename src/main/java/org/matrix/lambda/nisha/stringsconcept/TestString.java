@@ -10,6 +10,11 @@ public class TestString {
         String str2 = new String("Nisha");      //  2.Object Creation
         System.out.println(str1);
 
+        String str3 = "Deepak" ;
+        str3 =str3.concat("Kumar");
+        System.out.println(str3);
+
+        System.out.println("----------------------------");
 
     }
 }
