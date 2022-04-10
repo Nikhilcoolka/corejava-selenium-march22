@@ -36,8 +36,9 @@ public class InstanceBlocks {
         InstanceBlocks myobj2 = new InstanceBlocks(58);               // object 2
         System.out.println("---------------------------------");
 
-        InstanceBlocks myobj3 = new InstanceBlocks(6,"Nisha");               // object 2
+        InstanceBlocks myobj3 = new InstanceBlocks(6, "Nisha");               // object 2
 
     }
+}
 
 
