@@ -6,5 +6,9 @@ package org.matrix.lambda.nisha.methods;
 
 public class TestMethodsConceptNew {
 
+    // Instance Variables
+    int a = 23;
+    int b = 34;
+
 
 }
