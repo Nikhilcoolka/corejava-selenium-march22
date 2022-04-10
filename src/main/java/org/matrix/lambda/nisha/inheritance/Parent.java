@@ -9,5 +9,11 @@ public class Parent extends GrandParent{
         System.out.println("Parent :: m2 Method");
     }
 
+    public static void main(String[] args) {
+        Parent obj = new Parent();
+        obj.m2();
+        obj.m3();
+    }
+
 }
 
