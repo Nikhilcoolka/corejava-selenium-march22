@@ -19,7 +19,7 @@ public class StaticVariableConcept {
 
     public static void main(String[] args) {
         System.out.println("In main method - " + s);
-        System.out.println("Access by company name - " +StaticVariableConcept.s);
+        System.out.println("Access by company name - " + StaticVariableConcept.s);
         StaticVariableConcept staticVariableConcept = new StaticVariableConcept();
         staticVariableConcept.display();
     }

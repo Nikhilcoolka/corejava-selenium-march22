@@ -13,13 +13,13 @@ public class LocalVariableConcept {
 
     LocalVariableConcept() {
         int z = 20;
-        System.out.println("In constructor - " +z);
+        System.out.println("In constructor - " + z);
         System.out.println(z);
     }
 
     public void display() {
         int z = 30;  // local variable
-        System.out.println("In display method - " +z);
+        System.out.println("In display method - " + z);
         System.out.println(z);
     }
 

@@ -4,10 +4,12 @@ public class MethodWithRetunType {
     public int getData(int a) {
         return a;
     }
+
     public int mul(int a, int b) {
-       // int mul = a * b;
-        return a+b;
+        // int mul = a * b;
+        return a + b;
     }
+
     public static void main(String[] args) {
         MethodWithRetunType m = new MethodWithRetunType();
         int n = m.getData(21);

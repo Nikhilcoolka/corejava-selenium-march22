@@ -4,8 +4,6 @@ public class TestEmployeeStaticVariable {
 
     int empI1 = 100;
     String empName1 = "shravi";
-    static String companyName = "ABc";
-
     int empId2 = 101;
     String empName2 = "shri";
 

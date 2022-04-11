@@ -15,16 +15,16 @@ public class TestMethodsConcept {
 
     // Method with parameter
     public void m3(int age) {
-        System.out.println("My age is: " +age);
+        System.out.println("My age is: " + age);
     }
 
     public static void m4(int age) {
-        System.out.println("Static method..My age is :" +age);
+        System.out.println("Static method..My age is :" + age);
     }
 
     public static void m5(int a, int b) {
         int c = a * b;
-        System.out.println("Static method..Multiplication is :" +c);
+        System.out.println("Static method..Multiplication is :" + c);
     }
 
     public static void main(String[] args) {

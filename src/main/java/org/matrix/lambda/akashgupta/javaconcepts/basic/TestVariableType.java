@@ -24,7 +24,7 @@ public class TestVariableType {
         System.out.println("this is main: ");
         //TestVariableType.display();   // cannot call non static method directly/classname. reference
         TestVariableType obj;
-        obj= new TestVariableType();
+        obj = new TestVariableType();
         System.out.println("Back to main after reinitializing \nCalling display in main with obj reference:");
         obj.display();      //can only call 'object.' reference in static method
         System.out.println("Use of obj reference access in static method:");

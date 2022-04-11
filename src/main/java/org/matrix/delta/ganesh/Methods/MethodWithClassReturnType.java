@@ -2,14 +2,14 @@ package org.matrix.delta.ganesh.Methods;
 
 public class MethodWithClassReturnType {
 
-    public IamEmployee getEmployeeClass(){
+    public IamEmployee getEmployeeClass() {
         IamEmployee employee = new IamEmployee();
 //        return new IamEmployee();
         return employee;
     }
 
 
-    public IamEmployee getEmpDetails(IamEmployee employee){
+    public IamEmployee getEmpDetails(IamEmployee employee) {
         return employee;
 
     }
@@ -18,7 +18,7 @@ public class MethodWithClassReturnType {
 
         MethodWithClassReturnType obj = new MethodWithClassReturnType();
 //        obj.getEmployeeClass(new IamEmployee());
-        IamEmployee iamEmployee1 =  obj.getEmployeeClass();
+        IamEmployee iamEmployee1 = obj.getEmployeeClass();
         System.out.println(iamEmployee1.empID);
         System.out.println(iamEmployee1.empName);
 //        System.out.println(iamEmployee1.company);
