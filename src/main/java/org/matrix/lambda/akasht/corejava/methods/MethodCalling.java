@@ -33,6 +33,11 @@ public class MethodCalling {
 
     public void m6() {
         System.out.println("Mining Engineering");
+
+    }
+
+    public void m7() {
+        System.out.println("Production engineering");
     }
 
     public static void main(String[] args) {
