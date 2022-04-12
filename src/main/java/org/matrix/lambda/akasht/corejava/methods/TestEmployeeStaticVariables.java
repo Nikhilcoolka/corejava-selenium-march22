@@ -1,3 +1,5 @@
+package org.matrix.lambda.akasht.corejava.methods;
+
 import org.matrix.lambda.akasht.corejava.Employee;
 
 public class TestEmployeeStaticVariables {
