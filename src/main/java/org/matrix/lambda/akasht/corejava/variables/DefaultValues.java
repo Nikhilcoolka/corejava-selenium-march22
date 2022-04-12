@@ -1,4 +1,4 @@
-package org.matrix.lambda.akasht.corejava;
+package org.matrix.lambda.akasht.corejava.variables;
 
     /* class Employee {
 
