@@ -1,4 +1,4 @@
-package org.matrix.alpha.shamal;
+package org.matrix.alpha.shamal.java.Variable;
 
 public class StaticMethodExamples {
 
