@@ -2,7 +2,7 @@ package org.matrix.lambda.akasht.corejava.methods;
 
 public class TestMethodReturnType {
 
-    public int addition(int a , int b) {
+    public int addition(int a, int b) {
         int c = a + b;
         return c;
     }
@@ -22,7 +22,6 @@ public class TestMethodReturnType {
         int mul = obj.multiplication(200, 400);
         System.out.println(add);
         System.out.println(mul);
-
         String str = obj.getName("Akash");
         System.out.println(str);
     }
