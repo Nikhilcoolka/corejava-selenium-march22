@@ -1,20 +1,39 @@
 package org.matrix.delta.rahul.interfaceconcept;
 
-public class Testclass implements TestInterface{
+public class Testclass implements TestInterface,TestInterface2{
     @Override
     public void m1() {
-        System.out.println(" i am the m1 method ");
+        System.out.println("TestInterface:: m1");
     }
 
     @Override
     public void m2() {
-        System.out.println("I Am the m2 Method");
+        System.out.println("TestInterface::m2");
 
     }
 
+
+    @Override
+    public void m4() {
+        System.out.println("TestInterface1::m4");
+    }
+
+    @Override
+    public String m5() {
+        return "Rahul";
+    }
+
     public static void main(String[] args) {
-        Testclass obj=new Testclass();
+        TestInterface obj=new Testclass();
         obj.m1();
         obj.m2();
+        TestInterface2 obj1=new Testclass();
+        obj1.m4();
+        String name=obj1.m5();
+        System.out.println(name);
+        //age=25 // can not change the value if variable with final keyword and initionalisation already
+        // System.out.println(age);
+
+
     }
 }

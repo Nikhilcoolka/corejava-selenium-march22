@@ -2,7 +2,7 @@ package org.matrix.delta.rahul.interviewexample;
 
 import java.util.Scanner;
 
-public class Factorial {
+public class Program21 {
     Scanner s=new Scanner(System.in);
     int f;int fc; int fact=1;
     public void factorialMethod() {
@@ -15,7 +15,7 @@ public class Factorial {
     }
 
     public static void main(String[] args) {
-        Factorial obj=new Factorial();
+        Program21 obj=new Program21();
         obj.factorialMethod();
 
     }
