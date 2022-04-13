@@ -1,31 +1,17 @@
 package org.matrix.lambda.akashgupta.selenium;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-
+import static org.matrix.lambda.akashgupta.selenium.setDriver.driver;
 public class Assignment3 {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.edge.driver", "C:\\Users\\akash\\Downloads\\edgedriver_win64\\msedgedriver.exe");
-        WebDriver driver = new EdgeDriver();
+        setDriver.setDriverProperty("edge");
         driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
+        Thread.sleep(2000);
 
+        String s = driver.getTitle();
 
-        Boolean flag = driver.findElement(By.xpath("//div/div/div")).isDisplayed();
-        System.out.println(flag);
-
-        Thread.sleep(20000);
-        //while sleep manually deselect the css property
-
-        flag = driver.findElement(By.xpath("//div/div/div")).isDisplayed();
-        System.out.println(flag);
-
-       /* if(attributeClass.equals("login_logo")) {
-            System.out.println("class is present");
-            driver.findElement(By.cssSelector())
-
-        }*/
+        //driver.close();
+        System.out.println(s);
         driver.close();
     }
 }
