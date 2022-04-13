@@ -16,11 +16,11 @@ public class MethodsConcept {
     }
 
     public void firstMethod() {
-        System.out.println("First Method");
+        System.out.println("First method");
     }
 
     public void secondMethod() {
-        System.out.println("Second Method");
+        System.out.println("Second method");
     }
 
     public void add(int a, int b) {

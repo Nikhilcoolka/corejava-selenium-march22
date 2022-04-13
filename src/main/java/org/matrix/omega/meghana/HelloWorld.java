@@ -1,4 +1,4 @@
-package org.matrix.lambda.meghana;
+package org.matrix.omega.meghana;
 
 public class HelloWorld {
 
