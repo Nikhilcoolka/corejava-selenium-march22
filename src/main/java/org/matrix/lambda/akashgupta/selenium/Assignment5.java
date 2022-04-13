@@ -13,10 +13,11 @@ public class Assignment5 {
     public static void main(String[] args) throws InterruptedException {
         setDriver.setDriverProperty("edge");
         driver.get("https://demo.nopcommerce.com/");
-        Thread.sleep(8000);
+        Thread.sleep(2000);
         List<WebElement> button;
-        button = driver.findElements(By.xpath("//button[contains(@class,'button-2 product-box-add-to-cart-button')]"));
-        button.get(1).click();
+        button = driver.findElements(By.xpath("//button[contains(@class,'product-box-add-to-cart-button')]"));
+        //System.out.println(button.size());
+        button.get(0).click();
         //button.get(3).click();
         Thread.sleep(4000);
         driver.findElement(By.xpath("//button[@id='add-to-cart-button-1']")).click();
