@@ -2,7 +2,6 @@ package org.matrix.shriniwas.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestFirstScript {
@@ -14,27 +13,28 @@ public class TestFirstScript {
         driver.get("https://demo.nopcommerce.com/");
         driver.manage().window().maximize();
 
-        driver.findElement(By.xpath("//a[text()='Log in']")).click();
+        //Id
+        driver.findElement(By.id("email"));
 
-        Thread.sleep(2000);
-        driver.findElement(By.id("Email")).sendKeys("shriniwas@gmail.com");
+        //name
+        driver.findElement(By.name("email"));
 
-        Thread.sleep(2000);
-        driver.findElement(By.id("Password")).sendKeys("shri123");
+        //className
+        driver.findElement(By.className("inputtext _55r1 inputtext _1kbt inputtext _1kbt"));
 
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//button[text()='Log in']")).click();
+        //tagName
+        driver.findElement(By.tagName("input"));
+        driver.findElement(By.tagName("a"));
+        driver.findElement(By.tagName("textarea"));
 
-        WebElement errorMessage = driver.findElement(By.xpath("//div[text()='Login was unsuccessful. Please correct the errors and try again.']"));
-        boolean status = errorMessage.isDisplayed(); // True/False
+        //linkText
+        driver.findElement(By.linkText("Get started"));
+        driver.findElement(By.linkText("Download nopCommerce"));
 
-        if(status) {
-            System.out.println("Test case pass");
-        } else {
-            System.out.println("Test case fail");
-        }
+        //partialLinkText
+        driver.findElement(By.partialLinkText("started"));
+        driver.findElement(By.partialLinkText("nopCommerce"));
 
-        Thread.sleep(4000);
-        driver.close();
+
     }
 }

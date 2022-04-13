@@ -2,7 +2,7 @@ package org.matrix.lambda.nisha;
 
 public class LocalVariable {
 
-    public static void main(String[] args) {            // main Method
+    public static void main(String[] args) {            // main method
         String ni = "Mobile";                           // LocalVariable
         System.out.println(ni);
     }

@@ -27,7 +27,7 @@ public class TestMethod {
         System.out.println("I am an instance m1 method");
     }
 
-    //Method with parameter
+    //method with parameter
     public void m3(int age) {
         System.out.println("My Age is   " + age);
     }

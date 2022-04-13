@@ -16,7 +16,7 @@ public class TestLocalMethodCalling {
 
     public static void main(String[] args) {
         System.out.println("You are in main():\n" +
-                "You can not call instance method directly in 'static-Method'"
+                "You can not call instance method directly in 'static-method'"
                 + "\nYou have to create class object first:");
         TestLocalMethodCalling obj = new TestLocalMethodCalling();
         System.out.println(">>>obj.iMethod1();");
