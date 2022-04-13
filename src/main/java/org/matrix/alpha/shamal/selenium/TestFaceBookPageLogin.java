@@ -29,7 +29,7 @@ public class TestFaceBookPageLogin {
         Thread.sleep(2000);
         driver.findElement(By.id("loginbutton")).click();
 
-        WebElement errorMsg = driver.findElement(By.xpath("//div[text()='The password that you've entered is incorrect. Forgotten password?']"));
+        WebElement errorMsg = driver.findElement(By.xpath("//div[text()=\"Wrong credentials\"]"));
 
         boolean status = errorMsg.isDisplayed(); // True/False
 
