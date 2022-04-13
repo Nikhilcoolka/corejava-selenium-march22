@@ -16,6 +16,7 @@ public class Assignment3 {
         System.out.println(flag);
 
         Thread.sleep(20000);
+        //while sleep manually deselect the css property
 
         flag = driver.findElement(By.xpath("//div/div/div")).isDisplayed();
         System.out.println(flag);
