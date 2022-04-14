@@ -28,6 +28,9 @@ public class TestFirstScript {
 
         WebElement errorMessage = driver.findElement(By.xpath("//div[text()='Login was unsuccessful. Please correct the errors and try again.']"));
 
+        String str=errorMessage.getText();
+        System.out.println(str);
+
         boolean status = errorMessage.isDisplayed();//true or false
 
         if (status) {
