@@ -15,10 +15,10 @@ public class SeleniumProgram01 {
         driver.findElement(By.xpath("//a[text()='Log in']")).click();
 
         Thread.sleep(2000);
-        driver.findElement(By.id("Email")).sendKeys("sunanda@gmail.com");
+        driver.findElement(By.id("Email")).sendKeys("sunandamathapati1994@gmail.com");
 
         Thread.sleep(2000);
-        driver.findElement(By.id("Password")).sendKeys("shri123");
+        driver.findElement(By.id("Password")).sendKeys("sona1312");
 
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[text()='Log in']")).click();
