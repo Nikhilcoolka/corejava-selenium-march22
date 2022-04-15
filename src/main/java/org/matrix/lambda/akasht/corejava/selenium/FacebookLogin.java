@@ -2,7 +2,6 @@ package org.matrix.lambda.akasht.corejava.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class FacebookLogin {
@@ -19,7 +18,7 @@ public class FacebookLogin {
 
         driver.manage().window().maximize();
 
-        driver.findElement(By.xpath("//input[@id=\"email\"]")).click();
+        //driver.findElement(By.xpath("//input[@id=\"email\"]")).click();
 
         Thread.sleep(2000);
         driver.findElement(By.id("email")).sendKeys("Akashtoradmalle@gmail.com");
@@ -28,19 +27,19 @@ public class FacebookLogin {
         driver.findElement(By.id("pass")).sendKeys("Akash@123");
 
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//click[text()='Log in']")).click();
+        driver.findElement(By.name("Login")).click();
 
-        WebElement errorMessage = driver.findElement(By.xpath("//div[text()='Login was unsuccessful. Please correct the errors and try again.']"));
-        boolean status = errorMessage.isDisplayed(); // True/False
+        //WebElement errorMessage = driver.findElement(By.xpath("//div[text()='Login was unsuccessful. Please correct the errors and try again.']"));
+        //boolean status = errorMessage.isDisplayed(); // True/False
 
-        if (status) {
-            System.out.println("Test case pass");
-        } else {
-            System.out.println("Test case fail");
-        }
-
-        Thread.sleep(4000);
-        driver.close();
+        //if (status) {
+        //System.out.println("Test case pass");
+        //} else {
+        //System.out.println("Test case fail");
     }
+
+    //Thread.sleep(4000);
+    //driver.close();//
 }
+
 
