@@ -1,4 +1,4 @@
-package org.matrix.omega.neha.javaprograms;
+package org.matrix.omega.neha.corejava.javaprograms;
 
 import java.util.ArrayList;
 import java.util.Collections;
