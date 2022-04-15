@@ -7,11 +7,12 @@ public class ClassCallingMethod {
 
     }
     public void empCompany2(){
+        System.out.println("Calling In This Method");
         empCompany(); // Method Calling In Other Method
 
     }
     public static void main(String[] args) {
         ClassCallingMethod cl=new ClassCallingMethod();
-        cl.empCompany();
+        cl.empCompany2();
     }
 }

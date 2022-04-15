@@ -1,4 +1,4 @@
-package org.matrix.lambda.akasht;
+package org.matrix.lambda.akasht.corejava;
 
 public class HelloTestng {
     public static void main(String[] args) {

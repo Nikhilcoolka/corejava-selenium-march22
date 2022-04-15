@@ -7,7 +7,7 @@ public class MethodCalling {
     }
 
     public void m2() {
-        System.out.println("I am in Method m2");
+        System.out.println("I am in method m2");
 
     }
 
