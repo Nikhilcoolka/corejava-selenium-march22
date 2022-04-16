@@ -1,4 +1,4 @@
-package org.matrix.alpha.sunil.variables;
+package org.matrix.alpha.sunil.corejava.variables;
 
 import java.util.Scanner;
 
