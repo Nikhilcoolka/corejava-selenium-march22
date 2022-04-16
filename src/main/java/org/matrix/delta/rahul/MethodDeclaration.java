@@ -1,14 +1,14 @@
 package org.matrix.delta.rahul;
 
 public class MethodDeclaration {
-    // Method Without argument/parameter.
+    // method Without argument/parameter.
     public void data1() {
-        System.out.println("Created Second Simple Method");
+        System.out.println("Created Second Simple method");
     }
 
     //static method without argument/parameter.
     public static void data2() {
-        System.out.println("Created Static Method");
+        System.out.println("Created Static method");
     }
 
     public void m1(int age, String name) {
