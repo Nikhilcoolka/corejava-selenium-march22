@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+
+    body {
+    text-align: center;
+    }
+    form {
+      display: inline-block;
+      padding: 20px;
+    }
+    tr {
+      style: height:200px;
+    }
+    table{
+      style:width:100%;
+    }
+    button{
+      width: 80%;
+      height: 120%;
+      text-align : center;
+      padding: 15px 32px;
+      border-radius: 15px;
+      display: inline-block;
+    }
+    th, td {
+      padding: 15px;
+    }
+    select {
+      font-size:120%;
+    }
+
+</style>
+<body style="background-color:LightGray">
+<h1>Registration</h1><br>
+<div>
+    <form>
+        <table style="text-align:center;">
+            <tr>
+                <td rowspan="1"><label style="font-size:120%;"> First Name : </label></td>&nbsp;&nbsp;&nbsp;
+                <td rowspan="1"><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td rowspan="1"><label style="font-size:120%;"> Last Name :</label></td>
+                <td rowspan="1"><input type="text" id="lname" name="lname"><br></td>
+            </tr>
+            <tr>
+                <td rowspan="1"><label style="font-size:120%;"> Email :</label></td>
+                <td rowspan="1"><input type="text" id="email" name="email"><br></td>
+            </tr>
+            <tr>
+                <td rowspan="1"><label style="font-size:120%;"> Phone Number :</label></td>
+                <td rowspan="1"><input type="text" id="number" name="number"><br></td>
+            </tr>
+            <tr>
+                <td rowspan="1"><label style="font-size:120%;"> Password :</label></td>
+                <td rowspan="1"><input type="password" id="password" name="password"><br></td>
+            </tr>
+            <tr>
+                <td rowspan="1"><label style="font-size:120%;"> Confirm Password :</label></td>
+                <td rowspan="1"><input type="password" id="confirm" name="confirm"><br></td>
+            </tr>
+            <tr>
+                <td rowspan="1"><label style="font-size:120%;"> Country :</label></td>
+                <td rowspan="1"><select id="country" name="country">
+                    <option value="India">India</option>
+                    <option value="America">America</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Brazil">Brazil</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" required="required"> I accept the Terms of Use & Privacy Policy
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" style="background-color:blue; color:white; size:150%">Register</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
