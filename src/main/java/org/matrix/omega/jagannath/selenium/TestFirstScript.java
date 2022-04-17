@@ -24,5 +24,6 @@ public class TestFirstScript {
         {
             System.out.println("Test case is Fail");
         }
+        driver.close(); //closing the web driver
     }
 }
