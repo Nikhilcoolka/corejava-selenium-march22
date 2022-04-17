@@ -1,5 +1,6 @@
 package org.matrix.sigma.prajakta.selenium;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +10,8 @@ public class VerifyFacebookErrorMessage {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver.exe");
+       //System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.facebook.com/login/");

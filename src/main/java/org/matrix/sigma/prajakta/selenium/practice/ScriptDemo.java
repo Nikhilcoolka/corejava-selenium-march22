@@ -1,15 +1,15 @@
-package org.matrix.sigma.prajakta.selenium;
+package org.matrix.sigma.prajakta.selenium.practice;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-public class VerifyTitleSwagLabs {
+public class ScriptDemo{
 
-    public static void main(String[] args) throws InterruptedException {
-
-       // System.setProperty("webdriver.chrome.driver", "D:\\Automation\\chromedriver.exe");
+    @Test
+    public void Test() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
 
         WebDriver driver = new ChromeDriver();
@@ -31,7 +31,7 @@ public class VerifyTitleSwagLabs {
         Thread.sleep(2000);
 
         if (actualTitle.equals(title)) {
-            System.out.println("'Title of Saucedemo application is : "+actualTitle);
+            System.out.println("'Title of Saucedemo application is : " + actualTitle);
             System.out.println("Test case is pass");
         } else {
             System.out.println("Title not match");
@@ -39,4 +39,5 @@ public class VerifyTitleSwagLabs {
 
         driver.close();
     }
+
 }
