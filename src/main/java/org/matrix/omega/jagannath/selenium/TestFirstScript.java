@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestFirstScript {
-   // static WebDriver driver;
+    static WebDriver driver;
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "H:\\chromedriver_win32\\chromedriver.exe");
         ChromeDriver driver=new ChromeDriver();
