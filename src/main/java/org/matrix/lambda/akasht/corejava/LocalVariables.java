@@ -1,6 +1,6 @@
 package org.matrix.lambda.akasht.corejava;
 
-import org.matrix.shriniwas.corejava.methods.TestMethodsConceptNew;
+import org.matrix.omega.corejava.methods.TestMethodsConceptNew;
 
 public class LocalVariables {
     int a = 100;
