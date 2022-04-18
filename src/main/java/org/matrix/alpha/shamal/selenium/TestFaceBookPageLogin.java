@@ -29,8 +29,11 @@ public class TestFaceBookPageLogin {
         Thread.sleep(2000);
         driver.findElement(By.id("loginbutton")).click();
 
-        WebElement errorMsg = driver.findElement(By.xpath("//div[text()=\"Wrong credentials\"]"));
+        Thread.sleep(2000);
 
+        WebElement errorMsg = driver.findElement(By.xpath("//div[@class=\"fsl fwb fcb\"]"));
+
+        Thread.sleep(2000);
         boolean status = errorMsg.isDisplayed(); // True/False
 
         if(status) {
