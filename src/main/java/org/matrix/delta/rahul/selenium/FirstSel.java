@@ -1,27 +1,27 @@
 package org.matrix.delta.rahul.selenium;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class FirstSel {
 
         public static void main(String[] args) throws InterruptedException {
 
-            //System.setProperty("webdriver.chrome.driver", "E:\\chromedriver_win32\\chromedriver.exe");
-            // we have created environment  path for chromedriver
-            WebDriver driver = new ChromeDriver();
+            WebDriverManager.edgedriver().setup();
+            WebDriver driver = new EdgeDriver();
             driver.get("https://demo.nopcommerce.com/");
             driver.manage().window().maximize();
 
             driver.findElement(By.xpath("//a[text()='Log in']")).click();
 
             Thread.sleep(2000);
-            driver.findElement(By.id("Email")).sendKeys("shriniwas@gmail.com");
+            driver.findElement(By.id("Email")).sendKeys("shendagerb@gmail.com");
 
             Thread.sleep(2000);
-            driver.findElement(By.id("Password")).sendKeys("shri123");
+            driver.findElement(By.id("Password")).sendKeys("152452");
             Thread.sleep(2000);
             driver.findElement(By.xpath("//button[text()='Log in']")).click();
 
@@ -29,9 +29,9 @@ public class FirstSel {
             boolean status = errorMessage.isDisplayed();
 
             if(status) {
-                System.out.println("Test case pass");
+                System.out.println("pass");
             } else {
-                System.out.println("Test case fail");
+                System.out.println("fail");
             }
 
             Thread.sleep(4000);
