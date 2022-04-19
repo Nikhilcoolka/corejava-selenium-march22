@@ -8,7 +8,7 @@ public class FirstTestScriptAss1 {
 
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "E:\\Automation\\chromedriver\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "F:\\automation new\\chromedriver.exe");
 
         ChromeDriver driver = new ChromeDriver();
 
