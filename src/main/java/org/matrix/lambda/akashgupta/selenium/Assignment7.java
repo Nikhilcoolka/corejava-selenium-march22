@@ -17,8 +17,7 @@ public class Assignment7 {
 
     void login() throws IOException, InterruptedException {
         //WebDriver driver = new EdgeDriver();
-        driver.get(ReadProperties.getKey("url"));
-        Thread.sleep(2000);
+        driver.get(ReadProperties.getKey("urlsd"));
         driver.findElement(By.id("user-name")).sendKeys(ReadProperties.getKey("uId"));
         driver.findElement(By.id("password")).sendKeys(ReadProperties.getKey("password"));
         driver.findElement(By.id("login-button")).click();
