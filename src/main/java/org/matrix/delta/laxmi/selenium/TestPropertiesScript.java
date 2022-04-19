@@ -9,7 +9,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class testScript1 {
+public class TestPropertiesScript {
     public static String readPropertyDemo(String key) throws IOException {
         FileInputStream fis = new FileInputStream("H:\\Selenium\\corejava-selenium-march22\\src\\main\\java\\org\\matrix\\delta\\laxmi\\selenium\\config.properties");
         Properties prop = new Properties();
