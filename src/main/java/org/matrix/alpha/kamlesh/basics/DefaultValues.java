@@ -1,6 +1,6 @@
 package org.matrix.alpha.kamlesh.basics;
 
-import org.matrix.delta.rahul.Employee;
+import org.matrix.delta.rahul.corejava.Employee;
 
 public class DefaultValues {
     static int i;

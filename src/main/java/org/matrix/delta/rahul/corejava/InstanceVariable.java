@@ -1,4 +1,4 @@
-package org.matrix.delta.rahul;
+package org.matrix.delta.rahul.corejava;
 
 public class InstanceVariable {
     int a = 15;

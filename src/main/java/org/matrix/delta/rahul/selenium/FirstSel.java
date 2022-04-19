@@ -9,7 +9,8 @@ public class FirstSel {
 
         public static void main(String[] args) throws InterruptedException {
 
-            System.setProperty("webdriver.chrome.driver", "E:\\chromedriver_win32\\chromedriver.exe");
+            //System.setProperty("webdriver.chrome.driver", "E:\\chromedriver_win32\\chromedriver.exe");
+            // we have created environment  path for chromedriver
             WebDriver driver = new ChromeDriver();
             driver.get("https://demo.nopcommerce.com/");
             driver.manage().window().maximize();
@@ -21,7 +22,6 @@ public class FirstSel {
 
             Thread.sleep(2000);
             driver.findElement(By.id("Password")).sendKeys("shri123");
-
             Thread.sleep(2000);
             driver.findElement(By.xpath("//button[text()='Log in']")).click();
 

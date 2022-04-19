@@ -1,6 +1,6 @@
 package org.matrix.delta.rahul.block;
 
-import org.matrix.delta.rahul.ExampleClass2;
+import org.matrix.delta.rahul.corejava.ExampleClass2;
 
 public class InstanceBlacks {
 

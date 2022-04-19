@@ -1,4 +1,4 @@
-package org.matrix.delta.rahul;
+package org.matrix.delta.rahul.corejava;
 
 public class LoginTest {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package org.matrix.delta.rahul;
-
-import java.lang.reflect.Method;
+package org.matrix.delta.rahul.corejava;
 
 public class MethodCallingFromDifferentClass {
     public void m1() {

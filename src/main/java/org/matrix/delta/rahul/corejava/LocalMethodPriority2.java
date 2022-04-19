@@ -1,4 +1,4 @@
-package org.matrix.delta.rahul;
+package org.matrix.delta.rahul.corejava;
 
 public class LocalMethodPriority2 {
     int a = 100;//instance Variable
