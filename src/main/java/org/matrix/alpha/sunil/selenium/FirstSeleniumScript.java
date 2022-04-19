@@ -1,20 +1,14 @@
-<<<<<<< HEAD
 package org.matrix.alpha.sunil.selenium;
 
 import org.openqa.selenium.By;
-=======
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
->>>>>>> origin/MAT-10-SunilS
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class TestFirstScript {
-
-        public static void main(String[] args) throws InterruptedException{
+public class FirstSeleniumScript {
+        public static void main(String[] args) {
+            System.setProperty("webdriver.chrome.driver","C:\\chromedriver_win32\\chromedriver.exe");
             ChromeDriver driver = new ChromeDriver();
-            System.setProperty("webdriver.chrome.driver","D:\\chromedriver_win32\\chromedriver.exe");
-            driver.get("https://demo.nopcommerce.com");
+            driver.get("https://demo.nopcommerce.com/");
             driver.manage().window().maximize();
             driver.findElement(By.xpath("//a[text ()='Log in']")).click();
             driver.findElement(By.id("Email")).sendKeys("sunil@gmail.com");
@@ -31,5 +25,3 @@ public class TestFirstScript {
             driver.close();
         }
     }
-
-
