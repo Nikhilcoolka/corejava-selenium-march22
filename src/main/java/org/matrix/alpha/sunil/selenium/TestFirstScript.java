@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 package org.matrix.alpha.sunil.selenium;
 
 import org.openqa.selenium.By;
+=======
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+>>>>>>> origin/MAT-10-SunilS
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
