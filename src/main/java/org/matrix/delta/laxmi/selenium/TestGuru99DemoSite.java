@@ -18,6 +18,14 @@ public class TestGuru99DemoSite {
 
         driver.findElement(By.xpath("//input[@name='btnLogin']")).click();
         Thread.sleep(2000);
+        String pageTitle= driver.getTitle();
+
+        if(pageTitle.equals("Guru99 Bank Manager HomePage")){
+            System.out.println("Test is Pass");
+        }
+        else{
+            System.out.println("Test is Fail");
+        }
         driver.close();
     }
 }
