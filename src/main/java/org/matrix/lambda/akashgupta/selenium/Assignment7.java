@@ -1,5 +1,6 @@
 package org.matrix.lambda.akashgupta.selenium;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -27,6 +28,7 @@ public class Assignment7 {
 
     @Test
     void testLogin() throws IOException, InterruptedException {
+        WebDriverManager.chromedriver().setup();
         login();
         try {
             WebElement element = driver.findElement(By.xpath("//h3[@data-test='error']"));

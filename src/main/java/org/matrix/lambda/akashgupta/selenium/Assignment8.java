@@ -1,5 +1,6 @@
 package org.matrix.lambda.akashgupta.selenium;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,10 +11,10 @@ import java.io.IOException;
 import java.util.List;
 
 public class Assignment8 {
+
     WebDriver driver = new ChromeDriver();
 
     void login() throws IOException, InterruptedException {
-        //WebDriver driver = new EdgeDriver();
         driver.get(ReadProperties.getKey("urlohrm"));
         driver.findElement(By.id("txtUsername")).sendKeys(ReadProperties.getKey("uIdohrm"));
         driver.findElement(By.id("txtPassword")).sendKeys(ReadProperties.getKey("passwordohrm"));
@@ -24,6 +25,7 @@ public class Assignment8 {
 
     @Test
     void ohrmTabMenu() throws IOException, InterruptedException {
+        WebDriverManager.chromedriver().setup();
         login();
         List<WebElement> tabs = driver.findElements(By.xpath("//ul[@id='mainMenuFirstLevelUnorderedList']/li"));
         if (tabs.size() != 11) {
@@ -32,10 +34,9 @@ public class Assignment8 {
             return;
         } else {
             System.out.println("Present tabs are:");
-            for (int i = 1; i <= 11; i++) {
-                if (tabs.get(i - 1).isDisplayed()) {
-                    String path = "//ul[@id='mainMenuFirstLevelUnorderedList']/li[" + i + "]/a/b";
-                    System.out.println(i + ":\t" + driver.findElement(By.xpath(path)).getText());
+            for (int i = 0; i < 11; i++) {
+                if (tabs.get(i).isDisplayed()) {
+                    System.out.println(i + ":\t" + tabs.get(i).getText());
                 }
             }
         }
