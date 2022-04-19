@@ -26,7 +26,7 @@ public class FirstSel {
             driver.findElement(By.xpath("//button[text()='Log in']")).click();
 
             WebElement errorMessage = driver.findElement(By.xpath("//div[text()='Login was unsuccessful. Please correct the errors and try again.']"));
-            boolean status = errorMessage.isDisplayed(); // True/False
+            boolean status = errorMessage.isDisplayed();
 
             if(status) {
                 System.out.println("Test case pass");
