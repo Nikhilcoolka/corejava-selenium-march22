@@ -1,31 +1,59 @@
 package org.matrix.lambda.akashgupta.selenium;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import java.io.IOException;
+
+//import static org.matrix.lambda.akashgupta.selenium.ReadProperties.getKey;
 
 public class Assignment7 {
-    public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.edge.driver", "C:\\Users\\akash\\Downloads\\edgedriver_win64\\msedgedriver.exe");
-        WebDriver driver = new EdgeDriver();
-        driver.get("https://www.saucedemo.com/");
-        driver.manage().window().maximize();
+    WebDriver driver = new ChromeDriver();
 
 
-        Boolean flag = driver.findElement(By.xpath("//div/div/div")).isDisplayed();
-        System.out.println(flag);
+    void login() throws IOException, InterruptedException {
+        //WebDriver driver = new EdgeDriver();
+        driver.get(ReadProperties.getKey("url"));
+        Thread.sleep(2000);
+        driver.findElement(By.id("user-name")).sendKeys(ReadProperties.getKey("uId"));
+        driver.findElement(By.id("password")).sendKeys(ReadProperties.getKey("password"));
+        driver.findElement(By.id("login-button")).click();
+        Thread.sleep(2000);
 
-        Thread.sleep(20000);
-        //while sleep manually deselect the css property
+    }
 
-        flag = driver.findElement(By.xpath("//div/div/div")).isDisplayed();
-        System.out.println(flag);
+    @Test
+    void testLogin() throws IOException, InterruptedException {
+        login();
+        try {
+            WebElement element = driver.findElement(By.xpath("//h3[@data-test='error']"));
+            boolean status = element.isDisplayed();
 
-       /* if(attributeClass.equals("login_logo")) {
-            System.out.println("class is present");
-            driver.findElement(By.cssSelector())
+            if (status) {
+                System.out.println("Login failed:");
+                System.out.println(element.getText());
+            }
+        } catch (NoSuchElementException element) {
+        }
 
-        }*/
+        try {
+            WebElement element = driver.findElement(By.xpath("//a[@id='item_4_img_link']/img"));
+
+            String src = "https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.34e7aa42.jpg";
+
+            if (element.getAttribute("src").equals(src))
+                System.out.println("Login Successful");
+            else
+                System.out.println("Problem in user login ");
+        } catch (NoSuchElementException element) {
+        }
+
         driver.close();
+
+
     }
 }
