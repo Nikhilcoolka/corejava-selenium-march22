@@ -1,6 +1,6 @@
-package org.matrix.lambda.akashgupta.javaconcepts.basic;
+package org.matrix.lambda.akashgupta.javaconcepts.corejava.basic;
 
-import org.matrix.lambda.akashgupta.javaconcepts.classes.Employee;
+import org.matrix.lambda.akashgupta.javaconcepts.corejava.classes.Employee;
 
 public class Variables {
     static int i;

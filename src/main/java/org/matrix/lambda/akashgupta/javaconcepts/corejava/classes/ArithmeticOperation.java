@@ -1,4 +1,4 @@
-package org.matrix.lambda.akashgupta.javaconcepts.classes;
+package org.matrix.lambda.akashgupta.javaconcepts.corejava.classes;
 
 public class ArithmeticOperation {
     public int add(int a, int b) {

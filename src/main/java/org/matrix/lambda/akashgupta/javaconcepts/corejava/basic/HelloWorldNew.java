@@ -1,4 +1,4 @@
-package org.matrix.lambda.akashgupta.javaconcepts.basic;
+package org.matrix.lambda.akashgupta.javaconcepts.corejava.basic;
 
 public class HelloWorldNew {
 
