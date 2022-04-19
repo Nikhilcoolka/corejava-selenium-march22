@@ -1,4 +1,4 @@
-package org.matrix.sigma.prajakta.selenium;
+package org.matrix.sigma.prajakta.selenium.assignments;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
