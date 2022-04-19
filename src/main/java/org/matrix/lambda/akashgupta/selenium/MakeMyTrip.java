@@ -8,7 +8,7 @@ import java.util.List;
 
 import static org.matrix.lambda.akashgupta.selenium.setDriver.driver;
 
-public class Assignment6 {
+public class MakeMyTrip {
     public static void main(String[] args) {
         setDriver.setDriverProperty("edge");
         driver.get("https://www.makemytrip.com/");
