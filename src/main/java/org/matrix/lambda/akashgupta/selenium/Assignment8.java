@@ -30,7 +30,7 @@ public class Assignment8 {
         Thread.sleep(2000);
         driver.findElement(By.id("securityAuthentication_userName")).sendKeys("Admin");
         driver.findElement(By.id("btnSearchValues")).click();
-        try {
+        try {//pause code execution by f8 and inspect by cursor for quickly disappearing element
             WebElement element = driver.findElement(By.xpath("//div[@class='message warning fadable']"));
             System.out.println(element.getText());
         } catch (NoSuchElementException e) {
