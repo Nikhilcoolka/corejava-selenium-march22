@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestFacebookLogin  {
 
-    public static void main(String[] args) throws InterruptedException  {
+    public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.gecko.driver", "D:\\geckodriver-v0.30.0-win32\\geckodriver.exe");
         WebDriver driver=new FirefoxDriver();
@@ -22,9 +22,11 @@ public class TestFacebookLogin  {
        // driver.findElement(By.id("loginbutton")).click();
 
         driver.findElement(By.tagName("button")).click();
-        String str1= driver.findElement(By.xpath("//*[text()='The password that you've entered is incorrect. ']")).getText();
-
-        System.out.println(str1);
+        Thread.sleep(20000);
+        String str="The password that you've entered is incorrect. ";
+        boolean flag =driver.findElement(By.xpath("//*[text()='The password that you've entered is incorrect. ']")).isDisplayed();
+        Thread.sleep(2000);
+        System.out.println(flag);
 
     }
 }
