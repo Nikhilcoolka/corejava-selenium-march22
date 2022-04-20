@@ -30,9 +30,12 @@ public class Assignment8 {
         Thread.sleep(2000);
         driver.findElement(By.id("securityAuthentication_userName")).sendKeys("Admin");
         driver.findElement(By.id("btnSearchValues")).click();
-        Thread.sleep(5000);
-        System.out.println("Please contact HR management in order to reset the password");
-
+        try {
+            WebElement element = driver.findElement(By.xpath("//div[@class='message warning fadable']"));
+            System.out.println(element.getText());
+        } catch (NoSuchElementException e) {
+            System.out.println("error message not displayed");
+        }
     }
 
     @Test
