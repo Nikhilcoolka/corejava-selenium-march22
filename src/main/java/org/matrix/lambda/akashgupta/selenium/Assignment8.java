@@ -16,9 +16,9 @@ public class Assignment8 {
     WebDriver driver = new ChromeDriver();
 
     void login() throws IOException, InterruptedException {
-        driver.get(ReadProperties.getKey("urlohrm"));
-        driver.findElement(By.id("txtUsername")).sendKeys(ReadProperties.getKey("uIdohrm"));
-        driver.findElement(By.id("txtPassword")).sendKeys(ReadProperties.getKey("passwordohrm"));
+        driver.get(ReadProperties.getKey("url_ohrm"));
+        driver.findElement(By.id("txtUsername")).sendKeys(ReadProperties.getKey("uId_ohrm"));
+        driver.findElement(By.id("txtPassword")).sendKeys(ReadProperties.getKey("password_ohrm"));
         driver.findElement(By.id("btnLogin")).click();
         Thread.sleep(2000);
 
