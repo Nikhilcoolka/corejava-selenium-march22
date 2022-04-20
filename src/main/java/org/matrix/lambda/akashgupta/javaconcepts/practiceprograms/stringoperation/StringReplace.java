@@ -1,4 +1,4 @@
-package org.matrix.lambda.akashgupta.javaconcepts.practiceprograms;
+package org.matrix.lambda.akashgupta.javaconcepts.practiceprograms.stringoperation;
 
 public class StringReplace {
     public static void main(String[] args) {

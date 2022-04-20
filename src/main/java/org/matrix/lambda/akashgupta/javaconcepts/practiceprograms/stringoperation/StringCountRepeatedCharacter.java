@@ -1,4 +1,4 @@
-package org.matrix.lambda.akashgupta.javaconcepts.practiceprograms;
+package org.matrix.lambda.akashgupta.javaconcepts.practiceprograms.stringoperation;
 
 import java.util.HashMap;
 import java.util.Locale;
