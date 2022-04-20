@@ -1,13 +1,11 @@
-package org.matrix.alpha.kamlesh.selenium;
+package org.matrix.alpha.kamlesh.selenium.assignments;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.sql.Driver;
-
-public class MyFirstPage {
+public class Assignment2 {
 
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver","D:\\Data\\chromedriver.exe");
