@@ -17,7 +17,7 @@ public class Assignment4 {
 
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www.facebook.com/");
+        driver.get("https://www.facebook.com/login/");
         //  Thread.sleep(1500);
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//input[@placeholder='Email address or phone number']")).click();
@@ -28,8 +28,7 @@ public class Assignment4 {
         //Thread.sleep(1500);
         driver.findElement(By.xpath("//button[@name='login']")).click();
        // Thread.sleep(1500);
-        //driver.findElement(By.xpath("//button[@class='_42ft _4jy0 _9kpt _4jy5 _4jy1 selected _51sy']")).click();
-        driver.findElement(By.xpath("//button[@autofocus='1']")).click();
+        driver.findElement(By.xpath("//a [@class='_39g9']")).click();
         WebElement errorMessage=driver.findElement(By.xpath("//div[@class='_9ay7']"));
         boolean status=errorMessage.isDisplayed();
         if(status){
