@@ -24,6 +24,7 @@ public static String readSauce(String key) throws IOException {
         WebDriverManager.chromedriver().setup();
         WebDriver d=new ChromeDriver();
         d.get(readSauce("url"));
+        d.manage().window().maximize();
         d.findElement(By.id("user-name")).sendKeys(readSauce("user"));
         Thread.sleep(2000);
         d.findElement(By.id("password")).sendKeys(readSauce("password"));
