@@ -2,6 +2,7 @@ package org.matrix.alpha.kamlesh.selenium.assignments;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 //Scenario: Verify the count of search results
@@ -17,5 +18,7 @@ public class Assignment6 {
         WebDriver driver=new ChromeDriver();
         driver.get("https://www.google.com/");
         driver.findElement(By.xpath("//input[@ class='gLFyf gsfi']")).sendKeys("selenium");
+        WebElement count=driver.findElement(By.xpath("//ul[@role='listbox']//ul[@class='G43f7e']"));
+        
     }
 }
