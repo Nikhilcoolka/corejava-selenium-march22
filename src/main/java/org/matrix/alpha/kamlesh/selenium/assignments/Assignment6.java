@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.awt.*;
+import java.util.List;
+
 //Scenario: Verify the count of search results
 //
 //Steps:
@@ -18,7 +21,8 @@ public class Assignment6 {
         WebDriver driver=new ChromeDriver();
         driver.get("https://www.google.com/");
         driver.findElement(By.xpath("//input[@ class='gLFyf gsfi']")).sendKeys("selenium");
-        WebElement count=driver.findElement(By.xpath("//ul[@role='listbox']//ul[@class='G43f7e']"));
-        
+        List<WebElement> count= (List<WebElement>) By.xpath("//ul[@role='listbox']//ul[@class='G43f7e']").findElement(driver);
+       // System.out.println("Total search columns are " +count.size());
+        driver.close();
     }
 }
