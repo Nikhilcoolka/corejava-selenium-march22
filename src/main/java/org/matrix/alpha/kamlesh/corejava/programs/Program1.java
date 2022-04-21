@@ -1,4 +1,4 @@
-package org.matrix.alpha.kamlesh.programs;
+package org.matrix.alpha.kamlesh.corejava.programs;
 
 //Program to reverse the given String
 public class Program1 {
