@@ -37,10 +37,8 @@ public class GoogleSearch {
         System.out.println("Total count of elements in search :: " + list.size());
         System.out.println("------Elements------");
 
-        String elements;
-        for (int i = 0; i < list.size(); i++) {
-            elements = list.get(i).getText();
-            System.out.println(elements);
+        for (WebElement web : list) {
+            System.out.println(web.getText());
         }
         driver.close();
     }
