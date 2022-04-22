@@ -26,15 +26,30 @@ public class AssignmentNo10 {
         driver.manage().window().maximize();
 
         driver.findElement(By.xpath("//a[@href='hms/user-login.php']")).click();
-        driver.findElement(By.name("username"));
+        //driver.findElement(By.name("username"));
         WebElement userName = driver.findElement(By.name("username"));
         WebElement passWord = driver.findElement(By.name("password"));
 
-        userName.sendKeys("Test");
-        passWord.sendKeys("Test123");
+        userName.sendKeys("test@gmail.com");
+        passWord.sendKeys("Test@123");
 
         driver.findElement(By.name("submit")).click();
 
+       boolean dashboard = driver.findElement(By.xpath("//span[@class=\"title\" and text()=\" Dashboard \"]")).isDisplayed();
+        System.out.println("The Dashboard-Tab Is Present:" +dashboard);
 
+        boolean bookApmt = driver.findElement(By.xpath("//span[@class=\"title\" and contains(text(),\" Book Appointment \")]")).isDisplayed();
+        System.out.println("BookAppoinment Tab is present:" +bookApmt);
+
+        boolean appHistory = driver.findElement(By.xpath("//span[@class=\"title\" and contains(text(),\" Appointment History \")]")).isDisplayed();
+        System.out.println("Appoinment History Tab is Present:" +appHistory);
+
+        boolean medicalHistory = driver.findElement(By.xpath("//span[@class=\"title\" and contains(text(),\" Medical History\")]")).isDisplayed();
+        System.out.println("Medical History Tab is Present:" +medicalHistory);
+
+        driver.findElement(By.xpath("//span[@class=\"username\"]")).click();
+       String titleOfHead = driver.findElement(By.xpath("//h1[@class=\"mainTitle\"]")).getText();
+
+        System.out.println(titleOfHead);
     }
 }
