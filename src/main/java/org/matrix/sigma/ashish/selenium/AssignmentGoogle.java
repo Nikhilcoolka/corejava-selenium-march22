@@ -18,7 +18,7 @@ public class AssignmentGoogle {
 
         driver.findElement(By.xpath("//*[@class='gLFyf gsfi']")).sendKeys("automation");
 
-        List<WebElement> list= driver.findElements(By.xpath("//*[@role=\"option\"]"));
+        List<WebElement> list= driver.findElements(By.xpath("//*[@role='option']"));
 
         //driver.findElement(By.xpath("//*[@class='wM6W7d']")).getText();
 
