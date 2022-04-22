@@ -31,7 +31,7 @@ public class Assignment8 {
         driver.findElement(By.id("securityAuthentication_userName")).sendKeys("Admin");
         driver.findElement(By.id("btnSearchValues")).click();
         try {//pause code execution by f8 and inspect by cursor for quickly disappearing element
-            WebElement element = driver.findElement(By.xpath("//div[@class='message warning fadable']"));
+            WebElement element = driver.findElement(By.xpath("//div//child::div//div[3]/div[1]"));
             System.out.println(element.getText());
         } catch (NoSuchElementException e) {
             System.out.println("error message not displayed");
