@@ -7,13 +7,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class TestFirstScript1 {
-   static WebDriver driver;
+public class TestFirstScript {
+    static WebDriver driver;
 
-   public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         String browser = "Firefox";
 
-        if(browser.equals("Chrome")) {
+        if (browser.equals("Chrome")) {
             System.setProperty("webdriver.chrome.driver", "E:\\chromedriver_win32\\chromedriver.exe");
             driver = new ChromeDriver();
         } else if (browser.equals("Firefox")) {
