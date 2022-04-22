@@ -1,9 +1,9 @@
-package org.matrix.delta.laxmi.selenium;
+package org.matrix.delta.laxmi.selenium.assignments;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class AssignmentNo3 {
+public class AssignmentThree {
     public static void main(String[] args) {
 
         System.setProperty("webdriver.chrome.driver", "H:\\Selenium\\chromedriver_win32\\chromedriver.exe");
