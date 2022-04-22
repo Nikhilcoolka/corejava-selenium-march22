@@ -19,14 +19,12 @@ public class Assignment10 {
         driver.findElement(By.className("form-control")).sendKeys(ReadProperties.getKey("uId"));
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys(ReadProperties.getKey("password"));
         driver.findElement(By.xpath("//button[@name='submit']")).click();
-        Thread.sleep(2000);
-
+        Thread.sleep(1000);
     }
 
     @Test
     void hospitalComponent() throws IOException, InterruptedException {
-        driver.navigate().to(ReadProperties.getKey("url"));
-        //Thread.sleep(2000);
+        driver.get(ReadProperties.getKey("url"));
         driver.findElement(By.xpath("//div[@class='section group']/div[1]//a")).click();
         Thread.sleep(1000);
         login();
@@ -37,14 +35,16 @@ public class Assignment10 {
                     navList.get(2).getText().equals("Appointment History") &&
                     navList.get(3).getText().equals("Medical History"))
                 System.out.println("Nav list present");
-            else System.out.println("Nav list missing");
-        } catch (NoSuchElementException e) {
+            else System.out.println("Nav list missing or changed");
+        } catch (NoSuchElementException navList) {
+            System.out.println("nav xpath not available");
         }
 
         try {
             List<WebElement> dashBoard = driver.findElements(By.xpath("//div[@class='container-fluid container-fullw bg-white']/div/div//a"));
             if (dashBoard.size() == 3) {
-                dashBoard.get(0).click();
+                //dashBoard.get(0).click();
+                driver.findElement(By.xpath("//a[contains(text(),'Update')]")).click();
                 if (driver.findElement(By.xpath("//h1[contains(text(),'User | Edit Profile')]")).isDisplayed())
                     driver.navigate().back();
                 else {
@@ -53,10 +53,10 @@ public class Assignment10 {
                     return;
                 }
                 driver.navigate().refresh();
-                dashBoard = driver.findElements(By.xpath("//div[@class='container-fluid container-fullw bg-white']/div/div//a"));
-                System.out.println(dashBoard.get(1).isDisplayed());
+                /*dashBoard = driver.findElements(By.xpath("//div[@class='container-fluid container-fullw bg-white']/div/div//a"));
                 Thread.sleep(2000);
-                dashBoard.get(1).click();
+                dashBoard.get(1).click();*/
+                driver.findElement(By.xpath("//a[contains(text(),'View')]")).click();
                 if (driver.findElement(By.xpath("//h1[contains(text(),'User  | Appointment History')]")).isDisplayed())
                     driver.navigate().back();
                 else {
@@ -64,9 +64,10 @@ public class Assignment10 {
                     driver.close();
                     return;
                 }
-                dashBoard = driver.findElements(By.xpath("//div[@class='container-fluid container-fullw bg-white']/div/div//a"));
+                /*dashBoard = driver.findElements(By.xpath("//div[@class='container-fluid container-fullw bg-white']/div/div//a"));
                 Thread.sleep(2000);
-                dashBoard.get(2).click();
+                dashBoard.get(2).click();*/
+                driver.findElement(By.xpath("//a[contains(text(),'Book')]")).click();
                 if (driver.findElement(By.xpath("//h1[contains(text(),'User | Book Appointment')]")).isDisplayed())
                     driver.navigate().back();
                 else {
