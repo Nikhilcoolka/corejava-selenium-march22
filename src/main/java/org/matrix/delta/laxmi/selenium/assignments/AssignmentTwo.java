@@ -14,10 +14,8 @@ public class AssignmentTwo {
         driver.get(TestPropertiesScript.readPropertyDemo("nocom_url"));
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//a[text()='Log in']")).click();
-
         driver.findElement(By.id("Email")).sendKeys("laxmi321@gmail.com");
         driver.findElement(By.id("Password")).sendKeys("laxmi321");
-
         driver.findElement(By.xpath("//button[text()='Log in']")).click();
         WebElement errMsg=driver.findElement(By.xpath("//div[text()='Login was unsuccessful. Please correct the errors and try again.']"));
         boolean status=errMsg.isDisplayed();
