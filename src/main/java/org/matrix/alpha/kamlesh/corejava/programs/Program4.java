@@ -5,10 +5,8 @@ public class Program4 {
 
     public static void main(String[] args) {
         String str = "1 name_is_kamal ";                         //String SCP Immutable method
-        str=str.concat("dandi");
+        str = str.concat("dandi");
         System.out.println(str);
-
-
 
         String str1 = new String("2 name_is_kamal");      //String object immutable
         str1 = str1.concat(" dandi");
