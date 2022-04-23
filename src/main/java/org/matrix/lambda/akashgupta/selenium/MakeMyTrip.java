@@ -17,13 +17,10 @@ public class MakeMyTrip {
 
         driver.get("https://www.makemytrip.com/");
         String xpath = "//p[translate(text(),'abcdefghijklmnopqrstuvwxzy','ABCDEFGHIJKLMNOPQRSTUVWXZY')='" + header + "']/following-sibling::ul[1]/li/a";
-        //System.out.println(xpath);
         List<WebElement> links = driver.findElements(By.xpath(xpath));
         System.out.println("Total links present under " + header + " are :" + links.size());
-        int i = 1;
         for (WebElement e : links) {
-            System.out.println("link " + i + ":" + e.getText());
-            i++;
+            System.out.println("link : " + e.getText());
         }
     }
 
