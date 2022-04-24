@@ -2,10 +2,12 @@ package org.matrix.sigma.ashish.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.NoSuchElementException;
 import java.util.Properties;
 
 public class Assignment7SauceDemo {
@@ -22,7 +24,7 @@ public class Assignment7SauceDemo {
 
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
 
 
 
@@ -38,7 +40,36 @@ public class Assignment7SauceDemo {
 
          driver.findElement(By.id("password")).sendKeys(readProperties("password"));
 
-        driver.findElement(By.id("login-button")).click();
+
+       driver.findElement(By.xpath("//*[@id='login-button']")).click();
+
+       Thread.sleep(2000);
+
+        try {
+            WebElement element = driver.findElement(By.xpath("//h3[@data-test='error']"));
+            boolean status = element.isDisplayed();
+
+            if (status) {
+                System.out.println("Login failed:");
+                System.out.println(element.getText());
+            }
+        } catch (NoSuchElementException element) {
+        }
+
+        try {
+            WebElement element = driver.findElement(By.xpath("//a[@id='item_4_img_link']/img"));
+
+            String src = "https://www.saucedemo.com/static/media/sauce-backpack-1200x1500.34e7aa42.jpg";
+
+            if (element.getAttribute("src").equals(src))
+                System.out.println("Login Successful");
+            else
+                System.out.println("Problem in user login ");
+        } catch (NoSuchElementException element) {
+        }
+
+
+
 
      }
 }
