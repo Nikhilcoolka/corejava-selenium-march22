@@ -31,9 +31,9 @@ public class ArraylistTest {
         System.out.println(al1);
 
         /*.......................................class methods........................................*/
-        Object ob = al1.get(1);
+        Employee ob = (Employee) al1.get(1);
         System.out.println(ob.equals(o));
-        o.getData();
+        ob.getData();
         //ob.getData();    //why we can't call employee class methods/variables
 
 
