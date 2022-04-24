@@ -22,8 +22,6 @@ public class Assingment10_2 {
     void initDriver() throws IOException {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.get(ReadProperties.getKey("url"));
-
     }
 
     void loginPatient() throws InterruptedException, IOException {
@@ -46,7 +44,6 @@ public class Assingment10_2 {
         driver.findElement(By.xpath("//button[@name='submit']")).click();
         Thread.sleep(1000);
         Assert.assertTrue(driver.findElement(By.xpath("//p/span")).isDisplayed());
-        //driver.close();
     }
 
     @Test
@@ -67,7 +64,6 @@ public class Assingment10_2 {
             System.out.println("WebElement Error:" + err);
         }
         Assert.assertEquals(actualList, expectedList);
-        //driver.close();
     }
 
     @Test
@@ -86,7 +82,6 @@ public class Assingment10_2 {
             System.out.println("WebElement Error:" + err);
         }
         Assert.assertEquals(actualList, expectedList);
-        //driver.close();
     }
 
     @AfterTest
