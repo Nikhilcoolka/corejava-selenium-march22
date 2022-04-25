@@ -13,13 +13,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class AssignmentNo10 {
 
     public WebDriver driver = new ChromeDriver();
 
     @Test
-    public void verifyUiComponent(){
+    public void verifyUiComponent() throws InterruptedException {
 
         driver.get("http://wonske.com/HMS/hospital/index.html");
 
@@ -30,26 +31,37 @@ public class AssignmentNo10 {
         WebElement userName = driver.findElement(By.name("username"));
         WebElement passWord = driver.findElement(By.name("password"));
 
+        Assert.assertTrue(userName.isDisplayed());
         userName.sendKeys("test@gmail.com");
+
+        Assert.assertTrue(passWord.isDisplayed());
         passWord.sendKeys("Test@123");
 
         driver.findElement(By.name("submit")).click();
 
-       boolean dashboard = driver.findElement(By.xpath("//span[@class=\"title\" and text()=\" Dashboard \"]")).isDisplayed();
-        System.out.println("The Dashboard-Tab Is Present:" +dashboard);
+       WebElement dashboard = driver.findElement(By.xpath("//span[@class=\"title\" and text()=\" Dashboard \"]"));
+        Assert.assertTrue(dashboard.isDisplayed());
 
-        boolean bookApmt = driver.findElement(By.xpath("//span[@class=\"title\" and contains(text(),\" Book Appointment \")]")).isDisplayed();
-        System.out.println("BookAppoinment Tab is present:" +bookApmt);
+        WebElement bookApmt = driver.findElement(By.xpath("//span[@class=\"title\" and contains(text(),\" Book Appointment \")]"));
+        Assert.assertTrue(bookApmt.isDisplayed());
 
-        boolean appHistory = driver.findElement(By.xpath("//span[@class=\"title\" and contains(text(),\" Appointment History \")]")).isDisplayed();
-        System.out.println("Appoinment History Tab is Present:" +appHistory);
+        WebElement appHistory = driver.findElement(By.xpath("//span[@class=\"title\" and contains(text(),\" Appointment History \")]"));
+        Assert.assertTrue(bookApmt.isDisplayed());
 
-        boolean medicalHistory = driver.findElement(By.xpath("//span[@class=\"title\" and contains(text(),\" Medical History\")]")).isDisplayed();
-        System.out.println("Medical History Tab is Present:" +medicalHistory);
+        WebElement medicalHistory = driver.findElement(By.xpath("//span[@class=\"title\" and contains(text(),\" Medical History\")]"));
+        Assert.assertTrue(medicalHistory.isDisplayed());
 
         driver.findElement(By.xpath("//span[@class=\"username\"]")).click();
        String titleOfHead = driver.findElement(By.xpath("//h1[@class=\"mainTitle\"]")).getText();
+       System.out.println(titleOfHead);
 
-        System.out.println(titleOfHead);
+       driver.findElement(By.xpath("//li/a[@href=\"edit-profile.php\"]")).click();
+       //driver.navigate().back();
+      // driver.findElement(By.xpath("//li/a[@href=\"change-password.php\"]")).click();
+     //  driver.navigate().back();
+     //  driver.findElement(By.xpath("//li/a[@href=\"logout.php\"]")).click();
+
+
+
     }
 }
