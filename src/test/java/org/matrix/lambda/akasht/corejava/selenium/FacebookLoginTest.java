@@ -1,12 +1,11 @@
 package org.matrix.lambda.akasht.corejava.selenium;
 
-import junit.framework.TestCase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class FacebookLoginTest extends TestCase {
+public class FacebookLoginTest {
 
     public static void main(String[] args) throws InterruptedException {
         // TODO Auto-generated method stub
