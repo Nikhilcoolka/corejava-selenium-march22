@@ -35,6 +35,5 @@ public class Assignment10 {
         boolean U4=driver.findElement(By.xpath("//span[text()=' Medical History ']")).isDisplayed();
         System.out.println("Medical History" +U4);
 
-
     }
 }
