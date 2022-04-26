@@ -24,6 +24,13 @@ public class HelloWorld {
 
 # void = It is the return type of the method. It means it doesn't return any value.
 
+# main = It represents the starting point of the program.
+
+# String[] args or String args[] = It is used for command line argument.
+
+# System.out.println() = It is used to print statement.
+                         Here, System is a class, out is an object of the PrintStream class,
+                         println() is a method of the PrintStream class.
 
 */
 
