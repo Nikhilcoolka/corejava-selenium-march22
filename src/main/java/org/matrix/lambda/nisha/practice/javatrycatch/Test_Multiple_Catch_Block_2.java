@@ -16,3 +16,16 @@ public class Test_Multiple_Catch_Block_2 {
         System.out.println("rest of the code......");
     }
 }
+
+
+
+
+
+/*
+
+-------------Rules for executing catch block------------
+1. At a time only one exception is occurred and at a time only one catch block is executed.
+2. All catch blocks must be ordered from most specific to most general i.e. ArithmaticException
+must come before catch for Exception.
+
+ */
