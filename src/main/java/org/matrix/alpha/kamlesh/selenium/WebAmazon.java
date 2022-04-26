@@ -35,7 +35,10 @@ WebAmazon {
         Thread.sleep(2000);
         driver.findElement(By.xpath("addCreditCardVerificationNumber4")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@name='addCreditCardVerificationNumber4']")).sendKeys("123");
+        driver.findElement(By.xpath("//input[@name='ppw-0h_PE_CUS_684c4b3d-b038-4a31-98b4-d22baa3fe40f_addCreditCardVerificationNumber4_issuer']")).sendKeys(Keys.TAB);
+        driver.findElement(By.xpath("//input[@name='ppw-0h_PE_CUS_684c4b3d-b038-4a31-98b4-d22baa3fe40f_addCreditCardVerificationNumber4_issuer']")).sendKeys(Keys.TAB);
+        driver.findElement(By.xpath("//input[@name='ppw-0h_PE_CUS_684c4b3d-b038-4a31-98b4-d22baa3fe40f_addCreditCardVerificationNumber4_issuer']")).sendKeys(Keys.TAB);
+        //driver.findElement(By.xpath("//input[@name='addCreditCardVerificationNumber4']")).sendKeys("123");
 
 
 
