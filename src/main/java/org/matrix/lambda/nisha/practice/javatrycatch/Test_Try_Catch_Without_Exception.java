@@ -14,14 +14,3 @@ public class Test_Try_Catch_Without_Exception {
 
 
 
-/*
-
----------------Java Try Catch--------------
-
-Syntax of try catch block
-try{
-// code that may throw exception
-}catch (Exception_Class_Name ref) {
-    }
-
- */
