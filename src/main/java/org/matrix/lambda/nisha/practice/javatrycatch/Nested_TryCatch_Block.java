@@ -13,3 +13,8 @@ public class Nested_TryCatch_Block {
                 System.out.println(ref1);
             }
 
+            try {
+                int arr[] = new int[4];
+                arr[6] = 34;
+            } catch (ArrayIndexOutOfBoundsException ref2) {
+                System.out.println(ref2);}
