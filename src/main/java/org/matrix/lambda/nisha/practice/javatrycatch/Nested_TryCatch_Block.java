@@ -18,3 +18,10 @@ public class Nested_TryCatch_Block {
                 arr[6] = 34;
             } catch (ArrayIndexOutOfBoundsException ref2) {
                 System.out.println(ref2);}
+            System.out.println("Other statements...");
+        } catch (Exception ref3) {
+            System.out.println("Handled.");
+        }
+        System.out.println("Normal flow");
+    }
+}
