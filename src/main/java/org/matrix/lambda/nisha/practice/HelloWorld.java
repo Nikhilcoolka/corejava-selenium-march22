@@ -9,3 +9,13 @@ public class HelloWorld {
 
 
 
+/*
+
+---------------Meaning of java words-------------------
+
+# class = This keyword is used to declare a class in java.
+
+# public = This keyword is an access modifier that represents visibility. It means it is visible to all.
+
+
+
