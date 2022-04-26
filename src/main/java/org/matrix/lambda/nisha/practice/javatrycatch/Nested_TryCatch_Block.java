@@ -38,3 +38,18 @@ public class Nested_TryCatch_Block {
 # Why use nested try catch block
 ---> Sometimes a situation may arise where a part of a block may cause one error and
 the entire block itself may cause another error. In such cases, exception handlers have to be nested.
+
+Syntax :
+try
+{
+    Statement 1;
+    Statement 2;
+    try
+    {
+        Statement 1;
+        Statement 2;
+    }catch (Exception ref)
+{
+}
+
+ */
