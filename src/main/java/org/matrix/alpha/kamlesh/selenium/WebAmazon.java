@@ -23,7 +23,7 @@ WebAmazon {
         driver.manage().window().maximize();
         driver.findElement(By.id("ap_email")).sendKeys("padmajatradingcompany@gmail.com");
         driver.findElement(By.id("continue")).click();
-        driver.findElement(By.id("ap_password")).sendKeys("9372636305Rr@#");
+        driver.findElement(By.id("ap_password")).sendKeys("************@#");
         driver.findElement(By.id("signInSubmit")).click();
         driver.findElement(By.xpath("//span[@class='abnav-accountfor']")).click();
         driver.findElement(By.xpath("//div[text() = 'Add money to your balance']")).click();
