@@ -58,5 +58,7 @@ public class TestLocators {
 
         System.out.println(readProperty("username")); // standard_user
         System.out.println(readProperty("password")); // secret_sauce
+
+
     }
 }
