@@ -21,7 +21,7 @@ WebAmazon {
        // Dimension size= new Dimension(1080,1080);
         //driver.manage().window().setSize(size);
         driver.manage().window().maximize();
-        driver.findElement(By.id("ap_email")).sendKeys("padmajatradingcompany@gmail.com");
+        driver.findElement(By.id("ap_email")).sendKeys("example@gmail.com");
         driver.findElement(By.id("continue")).click();
         driver.findElement(By.id("ap_password")).sendKeys("************@#");
         driver.findElement(By.id("signInSubmit")).click();
