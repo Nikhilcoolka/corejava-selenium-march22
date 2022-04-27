@@ -30,10 +30,13 @@ public class Assignment12 {
     expectedlinks.add("More Offices");
     expectedlinks.add("Make A Payment");
     expectedlinks.add("Work From Home");
+
+    System.out.println("expected " +expectedlinks);
    List<WebElement> links = driver.findElements(By.xpath("//p[text()='About the Site']/following-sibling::ul[1]/li/a"));
+   List<String> actuallinks=new ArrayList<>();
 
    for (WebElement link:links){
-       System.out.println(link.getText());
+       actuallinks.add(link.getText());
    }
 }
 }
