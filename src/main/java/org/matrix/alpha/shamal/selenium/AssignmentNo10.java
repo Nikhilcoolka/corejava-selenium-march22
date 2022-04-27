@@ -15,6 +15,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AssignmentNo10 {
 
     public WebDriver driver = new ChromeDriver();
@@ -38,7 +41,31 @@ public class AssignmentNo10 {
         passWord.sendKeys("Test@123");
 
         driver.findElement(By.name("submit")).click();
+       List<WebElement> list = driver.findElements(By.xpath("//ul[@class=\"main-navigation-menu\"]/li/a"));
 
+        for (WebElement link : list) {
+            System.out.println(link.getText());
+        }
+
+        ArrayList<String> expectedLinks = new ArrayList<>();
+        expectedLinks.add("Dashboard");
+        expectedLinks.add("Book Appointment");
+        expectedLinks.add("Appointment History");
+        expectedLinks.add("Medical History");
+        System.out.println("Expected Links:" +expectedLinks);
+
+        List<WebElement> links = driver.findElements(By.xpath("//ul[@class=\"main-navigation-menu\"]/li/a"));
+        List<String> actualLinks = new ArrayList<>();
+
+        for(WebElement act_links:links){
+            actualLinks.add(act_links.getText());
+        }
+        System.out.println("Actual Link will be :" +actualLinks);
+        System.out.println(actualLinks.size());
+
+        Assert.assertEquals(actualLinks,expectedLinks);
+
+      /*
        WebElement dashboard = driver.findElement(By.xpath("//span[@class=\"title\" and text()=\" Dashboard \"]"));
         Assert.assertTrue(dashboard.isDisplayed());
 
@@ -50,6 +77,7 @@ public class AssignmentNo10 {
 
         WebElement medicalHistory = driver.findElement(By.xpath("//span[@class=\"title\" and contains(text(),\" Medical History\")]"));
         Assert.assertTrue(medicalHistory.isDisplayed());
+       */
 
         driver.findElement(By.xpath("//span[@class=\"username\"]")).click();
        String titleOfHead = driver.findElement(By.xpath("//h1[@class=\"mainTitle\"]")).getText();
