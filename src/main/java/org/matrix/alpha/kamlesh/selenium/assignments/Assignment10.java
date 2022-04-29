@@ -9,13 +9,12 @@ Verify below UI components are displayed or not
 username-test@gmail.com
 pass-Test@123
 */
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class Assignment10 {
     @Test

@@ -6,13 +6,14 @@ Steps:
 Fetch all the url for the given heading
  */
 
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;

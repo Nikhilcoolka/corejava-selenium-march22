@@ -4,9 +4,9 @@ Find out the scenarios for Patient, Doctor and Admin modules in Hospital Managem
 https://www.softwaretestinghelp.com/login-page-test-cases/
 Test case template:
  */
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Assignment11 {
 @Test
