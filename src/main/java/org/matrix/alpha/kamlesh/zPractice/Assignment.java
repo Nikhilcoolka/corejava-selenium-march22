@@ -18,12 +18,7 @@ public class Assignment {
          Properties properties = new Properties();
          System.setProperty("webdriver.chrome.driver","D:\\Data\\chromedriver.exe");
          WebDriver driver = new ChromeDriver();
-        //WebDriverManager.chromedriver().setup();
-        // driver.get("https://demo.nopcommerce.com/");
-
-        String path = "D:\\name is kamal\\Automation Testng\\corejava-selenium-march22\\src\\main\\java\\org\\matrix\\alpha\\kamlesh\\zPractice\\config.properties";
-
-
+         String path = "src/main/java/org/matrix/alpha/kamlesh/selenium/config.properties";
         try {
             FileInputStream fileInputStream = new FileInputStream(path);
             properties.load(fileInputStream);
@@ -31,11 +26,6 @@ public class Assignment {
 
         }
 
-        String url = properties.getProperty("url");
-
-        driver.get(url);
-        System.out.println("@@@@@@@ " + url);
-
-       // driver.close();
+        driver.get(properties.getProperty("url"));
     }
 }
