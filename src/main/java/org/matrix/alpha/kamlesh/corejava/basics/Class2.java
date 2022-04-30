@@ -1,6 +1,6 @@
 package org.matrix.alpha.kamlesh.basics;
 
-public class Class2 {
+/*public class Class2 {
 
     public void multiplication(int a, int b){
 
@@ -43,3 +43,4 @@ public class Class2 {
     }
 
 }
+*/
