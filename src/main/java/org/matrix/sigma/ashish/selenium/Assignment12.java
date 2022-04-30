@@ -27,7 +27,7 @@ public class Assignment12 extends Assignment7SauceDemo {
 
         System.setProperty("webdriver.gecko.driver","D:\\geckodriver-v0.30.0-win32\\geckodriver.exe");
         WebDriver driver=new FirefoxDriver();
-       FindLinks(driver,"Product Offering");
+       FindLinks(driver,"MakeMyTripa");
 
     }
 }
