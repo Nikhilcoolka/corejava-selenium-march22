@@ -10,29 +10,16 @@ public class Assignment4AddItems {
     public static void main(String[] args) throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
-
         driver.get("https://www.saucedemo.com/");
-
         driver.manage().window().maximize();
-
         Thread.sleep(2000);
-
         driver.findElement(By.name("user-name")).sendKeys("standard_user");
-
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
-
-
-
         driver.findElement(By.name("login-button")).click();
         Thread.sleep(2000);
-
         driver.findElement(By.name("add-to-cart-sauce-labs-backpack")).click();
-
-
-
         driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
         Thread.sleep(2000);
-
         driver.findElement(By.id("checkout")).click();
         Thread.sleep(2000);
         driver.findElement(By.id("first-name")).sendKeys("Prem");
@@ -41,13 +28,12 @@ public class Assignment4AddItems {
         driver.findElement(By.id("continue")).click();
         Thread.sleep(2000);
         driver.findElement(By.id("finish")).click();
-
         WebElement order_confirm = driver.findElement(By.xpath("//h2[text()='THANK YOU FOR YOUR ORDER']"));
 
-        if(order_confirm.isDisplayed()){
+        if (order_confirm.isDisplayed()) {
             System.out.println("Order is confirmed");
             System.out.println("Test case pass");
-        }else{
+        } else {
             System.out.println("Test case fail ");
         }
 
