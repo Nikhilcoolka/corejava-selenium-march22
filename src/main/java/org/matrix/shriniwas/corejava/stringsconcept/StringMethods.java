@@ -72,7 +72,7 @@ public class StringMethods {
             System.out.println(str);
         }
 
-        System.out.println("----- Using For each loop for Character array -----");
+        System.out.println("----- Using For each loop for  array -----");
         char [] ch = {'s', 'h', 'r', 'i'};
 
         for ( char c : ch) {
