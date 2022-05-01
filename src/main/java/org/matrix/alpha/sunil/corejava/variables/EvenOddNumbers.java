@@ -1,8 +1,8 @@
-package org.matrix.alpha.sunil;
+package org.matrix.alpha.sunil.corejava.variables;
 
 import java.util.Scanner;
 
-public class Numbers {
+public class EvenOddNumbers {
 
 
     public static void main(String[] args) {

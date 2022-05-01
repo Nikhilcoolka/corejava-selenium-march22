@@ -1,4 +1,4 @@
-package org.matrix.alpha.sunil;
+package org.matrix.alpha.sunil.corejava.FirstJavaProgram;
 
 public class HelloWorld {
 
