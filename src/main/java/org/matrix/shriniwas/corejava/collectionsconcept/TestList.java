@@ -26,7 +26,7 @@ public class TestList {
         }
         System.out.println("------------------------");
         // Using for loop
-        for(int i = 0; i < 9; i++) {
+        for (int i = 0; i < 9; i++) {
             System.out.println(arr.get(i));
         }
 
@@ -37,7 +37,7 @@ public class TestList {
         ar1.add(50);
         Collections.sort(ar1);
 
-        System.out.println("After Sorting" +ar1);
+        System.out.println("After Sorting" + ar1);
 
         // ar1.add("Shriniwas");
 
@@ -49,7 +49,7 @@ public class TestList {
 
         System.out.println(l.get(0));
         System.out.println(l.get(1));
-        System.out.println("Size:" +l.size());
+        System.out.println("Size:" + l.size());
         l.add("Shriniwas");
         l.remove("Shri");
         l.remove(10); //10th Index, 11th Elements
