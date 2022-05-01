@@ -14,6 +14,6 @@ public static void display(){
         avc.show(); // This is NON-Static Method Calling By Using Obj Ref (avc)
 
         TestMethod.display(); // This is Static Method Calling By Using Class Name (TestMethod)
-
+display();
     }
 }
