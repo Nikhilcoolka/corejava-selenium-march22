@@ -1,4 +1,4 @@
-package org.matrix.omega.nayan;
+package org.matrix.omega.madan;
 
 public class GitDemo {
     public static void main(String[] args) {

@@ -10,5 +10,4 @@ public class DemoSecond {
         System.out.println("Addition of two number" +j);
         System.out.println("substraction of two number"+j);
     }
-}
-*/
+}*/
