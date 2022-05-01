@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
@@ -26,57 +26,108 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>3.141.59</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.1.1</version>
+    </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.5</version>
+    </dependency>
   </dependencies>
 
-
-
-
   <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (maybe moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+        <!-- The maven Clean Plugin is used when you want to remove files generated at build-time in a project's directory. -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
         </plugin>
+
         <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+        <!-- The Resources Plugin handles the copying of project resources to the output directory.
+        There are two different kinds of resources: main resources and test resources.
+        The difference is that the main resources are the resources associated to the main source code
+        while the test resources are associated to the test source code. -->
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
+
+        <!--  The Compiler Plugin is used to compile the sources of your project -->
+        <!--        -->
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
         </plugin>
+
+        <!--The Surefire Plugin is used during the test phase of the build lifecycle to
+        execute the unit tests of an application. It generates reports in two different file formats:
+        Plain text files (*.txt)
+        XML files (*.xml)-->
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
         </plugin>
+
+        <!-- This plugin provides the capability to build jars. To sign jars,
+        use the Maven Jarsigner Plugin.
+        Goals Overview
+        jar:jar create a jar file for your project classes inclusive resources.
+        jar:test-jar create a jar file for your project test classes . -->
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
+
+        <!-- The Install Plugin is used during the install phase to add artifact(s) to the local repository.
+        The Install Plugin uses the information in the POM (groupId, artifactId, version) to determine the proper location for the artifact within the local repository.
+        The local repository is the local cache where all artifacts needed for the build are stored.
+        By default, it is located within the user's home directory (~/.m2/repository)
+        but the location can be configured in ~/.m2/settings.xml using the <localRepository> element. -->
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
           <version>2.5.2</version>
         </plugin>
+
+        <!-- The deploy plugin is primarily used during the deploy phase, to add your artifact(s) to a remote repository for sharing with other developers and projects.
+        This is usually done in an integration or release environment.
+        It can also be used to deploy a particular artifact
+        (e.g. a third party jar like Sun's non redistributable reference implementations).
+        As a repository contains more than the artifacts (POMs, the metadata, MD5 and
+        SHA1 hash files...), deploying means not only copying the artifacts,
+        but making sure all this information is correctly updated.
+        It's the reponsibility of the deploy plugin. -->
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
+
+
         <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+        <!--  The Site Plugin is used to generate a site for the project.
+        The generated site also includes the project's reports that were configured in the POM. -->
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.7.1</version>
         </plugin>
+
+        <!--The Maven Project Info Reports plugin is used to generate reports
+        information about the project.  -->
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
