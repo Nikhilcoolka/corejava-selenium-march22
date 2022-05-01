@@ -1,4 +1,4 @@
-package org.matrix.omega.neha;
+package org.matrix.omega.neha.variables;
 
 public class HelloTest {
     public static void main(String[] args) {
