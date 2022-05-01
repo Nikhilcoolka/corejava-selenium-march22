@@ -1,24 +1,29 @@
 package org.matrix.lambda.akashgupta.selenium;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
-import static org.matrix.lambda.akashgupta.selenium.setDriver.driver;
-
 public class Assignment6 {
-    public static void main(String[] args) {
-        setDriver.setDriverProperty("edge");
-        driver.get("https://www.makemytrip.com/");
-        Dimension size = new Dimension(20, 20);
-        driver.manage().window().setSize(size);
-        List<WebElement> links; /*= new ArrayList<WebElement>();*/
-        links = driver.findElements(By.xpath("//p[text()='Product Offering']/following-sibling::ul/li"));
-        System.out.println("First 10 links out of " + links.size() + ":");
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Link" + (i + 1) + " : " + links.get(i).getAttribute("data-cy"));
+
+    @Test
+    void googleSearch() throws InterruptedException {
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.google.com");
+        driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Automation");
+        Thread.sleep(2000);
+        List<WebElement> list = driver.findElements(By.xpath("//ul[@role='listbox']//li"));
+        System.out.println("Number of search options are:" + list.size());
+        Thread.sleep(2000);
+        System.out.println("Elements:");
+        for (WebElement webElement : list) {
+            System.out.println(webElement.getText());
         }
         driver.close();
 

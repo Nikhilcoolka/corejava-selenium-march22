@@ -1,6 +1,6 @@
 package org.matrix.sigma.pankaj.Method;
 
-import org.matrix.sigma.pankaj.Employee;
+import org.matrix.sigma.pankaj.corejava.Employee;
 
 public class TestMethodsWithSuperAndThis extends Employee {
 
@@ -10,9 +10,6 @@ public class TestMethodsWithSuperAndThis extends Employee {
 
     public void s2() {
         this.s1();
-       // super.s1();
-
-
     }
 
     public static void main(String[] args) {

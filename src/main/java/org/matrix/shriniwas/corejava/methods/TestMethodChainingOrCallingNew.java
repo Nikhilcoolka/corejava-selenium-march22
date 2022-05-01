@@ -11,6 +11,7 @@ public class TestMethodChainingOrCallingNew {
     }
 
     public void m2() {
+
         emp.getData();
     }
 
@@ -19,5 +20,4 @@ public class TestMethodChainingOrCallingNew {
         obj.m1(); // method calling
         obj.m2();
     }
-
 }

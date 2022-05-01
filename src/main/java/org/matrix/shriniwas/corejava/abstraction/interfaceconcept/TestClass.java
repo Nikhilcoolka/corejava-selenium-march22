@@ -44,7 +44,7 @@ public class TestClass implements TestInterface1, TestInterface2 {
         TestClass obj3 = new TestClass();
         obj3.getText();
 
-        System.out.println(TestInterface1.empName);
+        System.out.println(empName);
 
        // TestInterface1.empName = "Alle"; // Can not reassign value to final variable
 

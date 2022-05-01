@@ -5,6 +5,13 @@ public class Employee {
     public String empName = "Shriniwas";
     public static String company = "Microsoft";
 
+    public Employee(String kamal, int i) {
+    }
+
+    public Employee() {
+
+    }
+
     public void getData() {
         System.out.println(empId);
         System.out.println(empName);
