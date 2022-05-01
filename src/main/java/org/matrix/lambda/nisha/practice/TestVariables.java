@@ -1,8 +1,12 @@
-package org.matrix.lambda.nisha;
+package org.matrix.lambda.nisha.practice;
 
 public class TestVariables {
 
     public static void main(String[] args) {
+
+        // Syntax oh variables
+        // datatype variableName = value
+
         int n = 7;
         /*
         int= Primitive datatype
@@ -20,6 +24,9 @@ public class TestVariables {
         System.out.println(str);
     }
 }
+
+// Variables are container for storing data values
+
 
 
 

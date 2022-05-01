@@ -1,4 +1,4 @@
-package org.matrix.lambda.nisha;
+package org.matrix.lambda.nisha.variables;
 
 public class LocalVariable {
 
@@ -12,19 +12,16 @@ public class LocalVariable {
         System.out.println(ff);
     }
 
-
     {                                                   // Block
         boolean bb = false;                             // LocalVariable
         System.out.println(bb);
     }
-
 
     public void test(int i) {                           // int i = LocalVariable
         String str = "Vadisherla";                      // LocalVariable
         System.out.println(str);
         System.out.println(i);
     }
-
 
 }
 

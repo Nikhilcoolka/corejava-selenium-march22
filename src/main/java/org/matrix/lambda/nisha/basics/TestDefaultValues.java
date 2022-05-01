@@ -1,4 +1,4 @@
-package org.matrix.lambda.nisha;
+package org.matrix.lambda.nisha.basics;
 
 
 class Employee {

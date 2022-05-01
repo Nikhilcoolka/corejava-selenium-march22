@@ -8,7 +8,7 @@ public class StaticBlocks {
 
     static {
         i = 10;
-       // read file from c drive
+        // read file from c drive
 
         File f = new File("test.txt");
         // Database connectivity
