@@ -1,4 +1,4 @@
-package org.matrix.sigma.akash;
+package org.matrix.sigma.akash.variable;
 
 /* variable is name given to the value which is stored in memory location*/
 public class TestVariable {

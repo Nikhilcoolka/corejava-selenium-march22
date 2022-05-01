@@ -1,4 +1,4 @@
-package org.matrix.sigma.akash;
+package org.matrix.sigma.akash.variable;
 
 /* Note - To get the by default values of variable must be static and static variable assigned
 outside the main method. */

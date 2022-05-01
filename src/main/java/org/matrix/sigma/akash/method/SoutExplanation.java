@@ -1,4 +1,4 @@
-package org.matrix.sigma.akash;
+package org.matrix.sigma.akash.method;
 
 public class SoutExplanation {
     public static void main(String[] args) {

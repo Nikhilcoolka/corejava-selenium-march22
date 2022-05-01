@@ -1,4 +1,4 @@
-package org.matrix.sigma.akash;
+package org.matrix.sigma.akash.method;
 
 public class TestMethod {
     int a = 100;//instance variable

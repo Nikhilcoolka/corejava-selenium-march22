@@ -1,4 +1,4 @@
-package org.matrix.sigma.akash;
+package org.matrix.sigma.akash.variable;
 
 public class TestLocalVariable {
     TestLocalVariable() {//We have assigned one variable which is inside the constructor.

@@ -1,4 +1,4 @@
-package org.matrix.sigma.akash;
+package org.matrix.sigma.akash.variable;
 
 public class TestStaticVariable {
     int empId = 10; //non-static
