@@ -4,13 +4,30 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestFirstScript {
+    static WebDriver driver;
 
     public static void main(String[] args) throws InterruptedException {
+        String browser = "Firefox";
 
-        System.setProperty("webdriver.chrome.driver", "E:\\chromedriver_win32\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        if (browser.equals("Chrome")) {
+            System.setProperty("webdriver.chrome.driver", "E:\\chromedriver_win32\\chromedriver.exe");
+            driver = new ChromeDriver();
+        } else if (browser.equals("Firefox")) {
+            System.setProperty("webdriver.gecko.driver", "E:\\chromedriver_win32\\firefoxdriver.exe");
+            driver = new FirefoxDriver();
+        } else if(browser.equals("Edge")) {
+            System.setProperty("webdriver.edge.driver", "E:\\chromedriver_win32\\edgedriver.exe");
+            driver = new EdgeDriver();
+        }
+
+        // ChromeDriver driver = new ChromeDriver();
+        // FirefoxDriver driver1 = new FirefoxDriver();
+        // EdgeDriver driver2 = new EdgeDriver();
+
         driver.get("https://demo.nopcommerce.com/");
 //        Options op = driver.manage();
 //        Window win = op.window();

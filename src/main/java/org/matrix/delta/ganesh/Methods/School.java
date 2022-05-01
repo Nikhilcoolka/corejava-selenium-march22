@@ -1,6 +1,8 @@
 package org.matrix.delta.ganesh.Methods;
 
-public class School {
+import org.matrix.delta.ganesh.PackageConcept.ProtectedClass;
+
+public class School extends ProtectedClass {
 
     public static Student getStudentData() {
         return new Student();
@@ -14,5 +16,8 @@ public class School {
         System.out.println(Student.school);
         student.getStudent();
 
+        School school = new School();
+//        school.publicMethod();
+        school.protectedMethod();
     }
 }

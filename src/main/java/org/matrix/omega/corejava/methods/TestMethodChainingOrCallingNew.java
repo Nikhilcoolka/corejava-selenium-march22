@@ -11,6 +11,7 @@ public class TestMethodChainingOrCallingNew {
     }
 
     public void m2() {
+
         emp.getData();
     }
 

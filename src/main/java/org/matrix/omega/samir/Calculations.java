@@ -3,6 +3,7 @@ package org.matrix.omega.samir;
 import java.util.*;
 
 public class Calculations {
+    int v = 5;
 
     void addition(int i, int y) {
 
