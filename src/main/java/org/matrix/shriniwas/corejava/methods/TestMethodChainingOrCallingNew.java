@@ -19,5 +19,4 @@ public class TestMethodChainingOrCallingNew {
         obj.m1(); // method calling
         obj.m2();
     }
-
 }

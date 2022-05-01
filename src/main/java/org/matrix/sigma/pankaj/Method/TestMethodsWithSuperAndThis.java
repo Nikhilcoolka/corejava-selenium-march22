@@ -10,9 +10,6 @@ public class TestMethodsWithSuperAndThis extends Employee {
 
     public void s2() {
         this.s1();
-       // super.s1();
-
-
     }
 
     public static void main(String[] args) {

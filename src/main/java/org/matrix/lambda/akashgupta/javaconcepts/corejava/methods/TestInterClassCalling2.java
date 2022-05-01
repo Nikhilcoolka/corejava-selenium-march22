@@ -8,23 +8,23 @@ public class TestInterClassCalling2 {
     static TestLocalMethodCalling obj = new TestLocalMethodCalling();
 
     static void currentClassSMethod() {
-        System.out.println("\nCurrent class s-method............................start");
-        System.out.println("Calling of i-method  from diff class:\n" +
+        System.out.println("\nCurrent class s-Method............................start");
+        System.out.println("Calling of i-Method  from diff class:\n" +
                 "Use of ...'object.'... access\n" +
                 ">>>staticObj.interClassInstance();");
         obj.interClassInstance();
         //interClassInstance();       //can't call directly because scope of instance is within its own class
-        System.out.println("Calling of s-method from diff class");
+        System.out.println("Calling of s-Method from diff class");
         System.out.println("direct access by import :\n" +
                 ">>>interClassStatic();");
         interClassStatic();//can't call directly unless static import
-        System.out.println("Current class s-method.............end");
+        System.out.println("Current class s-Method.............end");
     }
 
     public static void main(String[] args) {
         System.out.println("Main.....");
         TestInterClassCalling2 obj = new TestInterClassCalling2();
-        System.out.println("Calling static-method from different class directly\n" +
+        System.out.println("Calling static-Method from different class directly\n" +
                 "BUT u have import the package\n"
                 + ">>>interClassStatic();");
         interClassStatic();
@@ -35,15 +35,15 @@ public class TestInterClassCalling2 {
     }
 
     void currentClassIMethod() {
-        System.out.println("\nCurrent class i-method............................start");
-        System.out.println("Calling of i-method from diff class:\n" +
+        System.out.println("\nCurrent class i-Method............................start");
+        System.out.println("Calling of i-Method from diff class:\n" +
                 "Use of ...'object.'... access\n" +
                 ">>>Obj.interClassInstance();");
         obj.interClassInstance();     // instance method can only be access by object. creation.
-        System.out.println("Calling of s-method from diff class");
+        System.out.println("Calling of s-Method from diff class");
         System.out.println("direct access by import :\n" +
                 ">>>interClassStatic();");
         interClassStatic();             //can call directly unless import
-        System.out.println("Current class i-method.............end\n");
+        System.out.println("Current class i-Method.............end\n");
     }
 }

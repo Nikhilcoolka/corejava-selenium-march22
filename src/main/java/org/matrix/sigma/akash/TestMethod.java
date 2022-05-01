@@ -5,7 +5,7 @@ public class TestMethod {
     int b = 200;//instance variable
 
     public void getData() { //it is non-static method. will be called by using object reference.
-        System.out.println("Your are in GetData method. which is accessed by using object reference.");
+        System.out.println("Your are in GetData Method. which is accessed by using object reference.");
         System.out.println("------------------");
         getData2(30, 40);//method chaining process.only access non-static method
     }

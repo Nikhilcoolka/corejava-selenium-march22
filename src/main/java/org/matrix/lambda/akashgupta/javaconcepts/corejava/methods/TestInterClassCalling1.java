@@ -5,17 +5,17 @@ public class TestInterClassCalling1 {
     static TestLocalMethodCalling staticObj = new TestLocalMethodCalling();
 
     static void currentClassSMethod() {
-        System.out.println("Current class s-method............................start");
-        System.out.println("Calling of i-method  from diff class:\n" +
+        System.out.println("Current class s-Method............................start");
+        System.out.println("Calling of i-Method  from diff class:\n" +
                 "Use of ...'object.'... access\n" +
                 ">>>staticObj.interClassInstance();");
         staticObj.interClassInstance();
         //interClassInstance();       //can't call directly because scope of instance is within its own class
-        System.out.println("Calling of s-method from diff class\n");
+        System.out.println("Calling of s-Method from diff class\n");
         System.out.println("Use of ...'classname.'... access :\n" +
                 ">>>TestLocalMethodCalling.interClassStatic();");
         TestLocalMethodCalling.interClassStatic();//can't call directly unless import
-        System.out.println("Current class s-method.............end");
+        System.out.println("Current class s-Method.............end");
 
     }
 
@@ -25,14 +25,14 @@ public class TestInterClassCalling1 {
         obj.currentClassIMethod();
         currentClassSMethod();
         System.out.println("Main.....");
-        System.out.println("Calling Instance method from different class:\n" +
+        System.out.println("Calling Instance Method from different class:\n" +
                 "You need to create an object of class whose method's ur calling\n" +
                 "by creating static/local obj\n" +
                 ">>>staticObj.interClassInstance();");
         staticObj.interClassInstance();
         System.out.println("\n>>>localobj.interClassInstance();");
         localObj.interClassInstance();
-        System.out.println("\nStatic-method calling ...\n" +
+        System.out.println("\nStatic-Method calling ...\n" +
                 "If class is present in same package and don't want to import,\n" +
                 "Use classname. access :");
         System.out.println(">>>TestLocalMethodCalling.interClassStatic();");
@@ -42,16 +42,16 @@ public class TestInterClassCalling1 {
     }
 
     void currentClassIMethod() {
-        System.out.println("Current class i-method............................start");
-        System.out.println("Calling of i-method from diff class:\n" +
+        System.out.println("Current class i-Method............................start");
+        System.out.println("Calling of i-Method from diff class:\n" +
                 "Use of ...'object.'... access\n" +
                 ">>>staticObj.interClassInstance();");
         staticObj.interClassInstance();
         //interClassInstance();       //can't call directly because scope of instance is within its own class
-        System.out.println("Calling of s-method from diff class\n");
+        System.out.println("Calling of s-Method from diff class\n");
         System.out.println("Use of ...'classname.'... access :\n" +
                 ">>>TestLocalMethodCalling.interClassStatic();");
         TestLocalMethodCalling.interClassStatic();//can't call directly unless import
-        System.out.println("Current class i-method.............end");
+        System.out.println("Current class i-Method.............end");
     }
 }

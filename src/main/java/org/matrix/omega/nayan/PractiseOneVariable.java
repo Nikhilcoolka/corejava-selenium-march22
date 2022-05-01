@@ -28,7 +28,7 @@ public class PractiseOneVariable {
 
     }
 
-    public void display() {         //Instance method
+    public void display() {         //Instance Method
         int a = 10;//Local Variable are nedded to intilize value
         int i = 100;
         System.out.println(a); // when method start ,memory deallocation when method end
@@ -42,7 +42,7 @@ public class PractiseOneVariable {
     }
 
 
-    public static void main(String[] args) {        //Static method
+    public static void main(String[] args) {        //Static Method
         PractiseOneVariable obj = new PractiseOneVariable();   // 2
         System.out.println(obj.year);    // a
         obj.display();
