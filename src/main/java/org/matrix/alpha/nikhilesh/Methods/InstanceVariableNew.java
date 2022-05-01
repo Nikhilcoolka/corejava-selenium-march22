@@ -17,6 +17,7 @@ public class InstanceVariableNew {
     }
 
     public static void main() {
+
         InstanceVariableNew obj = new InstanceVariableNew();
         System.out.println(obj.a);
         System.out.println(obj.f);
