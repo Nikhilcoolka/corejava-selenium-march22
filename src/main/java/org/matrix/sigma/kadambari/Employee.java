@@ -3,9 +3,9 @@ package org.matrix.sigma.kadambari;
 public class Employee {
     int empId = 1;
     String empName = "shravi";
-    static  String companyName ="Microsoft";
+    static String companyName = "Microsoft";
 
-    public void getData(){
+    public void getData() {
         System.out.println(empId);
         System.out.println(empName);
     }

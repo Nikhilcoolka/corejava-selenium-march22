@@ -6,7 +6,7 @@ public class Student1 {
     public String stuName = "Ganesh";
     public static String school = "MIT";
 
-    public void getStudent(){
+    public void getStudent() {
         System.out.println(stuId);
         System.out.println(stuName);
         System.out.println(school);

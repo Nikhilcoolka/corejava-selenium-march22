@@ -1,4 +1,4 @@
-/*package org.matrix.omega.nayan;
+package org.matrix.omega.nayan;
 
 public class StaticVariable {
 
@@ -13,7 +13,7 @@ public class StaticVariable {
         System.out.println("EMP ID:" + empId1);
         System.out.println("EMP NAME:" + empName);
         System.out.println("EMP COMPANY NAME:" + companyName);
-      //  System.out.println("ANOTHER CLASS TestOne EMP:" + TestOne.empName);  // another class
+
 
     }
 
@@ -36,4 +36,3 @@ public class StaticVariable {
 
     }
 }
-*/

@@ -47,7 +47,8 @@ public class PractiseOneVariable {
         System.out.println(obj.year);    // a
         obj.display();
         obj.display1();
-        System.out.println(PractiseOneVariable.str); //static variable use static method class name recomended
+        System.out.println(PractiseOneVariable.str);//static variable use static method class name recomended
+        System.out.println("Branching concept");
     }
 
 

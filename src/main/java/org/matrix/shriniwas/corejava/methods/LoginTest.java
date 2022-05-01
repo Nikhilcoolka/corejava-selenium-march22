@@ -7,6 +7,6 @@ public class LoginTest {
         loginPage.login();
         String title = loginPage.getTitleOfPage();
 
-        System.out.println("Title of the Page:" +title);
+        System.out.println("Title of the Page:" + title);
     }
 }
