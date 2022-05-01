@@ -3,7 +3,7 @@ package org.matrix.sigma.kadambari;
 public class TestEmployeeStaticVariable {
 
     int empI1 = 100;
-    String empName1 ="shravi";
+    String empName1 = "shravi";
     int empId2 = 101;
     String empName2 = "shri";
 

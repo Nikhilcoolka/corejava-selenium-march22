@@ -6,7 +6,7 @@ public class TestMethodsConceptNew {
 
     public void add(int a, int b) {
         System.out.println(c + d); // 300
-        System.out.println(a+b); // 30
+        System.out.println(a + b); // 30
     }
 
     public void getData(String str, int age, String strNew) {

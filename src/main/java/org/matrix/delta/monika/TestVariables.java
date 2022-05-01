@@ -4,7 +4,7 @@ import org.matrix.delta.monika.program.Students;
 
 public class TestVariables {
 
-    void demo(){
+    void demo() {
         int i = 30;
         System.out.println(i);
     }

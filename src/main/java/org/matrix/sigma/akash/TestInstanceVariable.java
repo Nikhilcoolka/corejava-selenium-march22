@@ -6,12 +6,14 @@ public class TestInstanceVariable {
     //Which can be used in whole class but not in the static methods.
     //scope - inside the whole class.
 
-    TestInstanceVariable(){
-        System.out.println("Age" +age);//Taken value from instance variable.
+    TestInstanceVariable() {
+        System.out.println("Age" + age);//Taken value from instance variable.
     }
-    public void age(){
-        System.out.println("your are in age method - " +age);//non-static method
+
+    public void age() {
+        System.out.println("your are in age method - " + age);//non-static method
     }
+
     public static void main(String[] args) {
         TestInstanceVariable obj = new TestInstanceVariable();
         obj.age();

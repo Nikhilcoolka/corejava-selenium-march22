@@ -1,8 +1,10 @@
 package org.matrix.sigma.akash;
+
 /* Note - To get the by default values of variable must be static and static variable assigned
 outside the main method. */
 class Employee {
 }
+
 public class TestDefaultValues {
     static int i;
     static boolean a;

@@ -6,34 +6,33 @@ public class MethodsConcept {
 
     int multiply;
 
-    public void getMethod(){
+    public void getMethod() {
         methodsAccess = new MethodsAccess();
         MethodsAccess.college();
     }
 
-    public void getMethod1(){
+    public void getMethod1() {
         methodsAccess.university();
     }
 
-    public void firstMethod(){
-        System.out.println("First Method");
+    public void firstMethod() {
+        System.out.println("First method");
     }
 
-    public void secondMethod(){
-        System.out.println("Second Method");
+    public void secondMethod() {
+        System.out.println("Second method");
     }
 
-    public void add(int a, int b){
+    public void add(int a, int b) {
         int h = a + b;
-        System.out.println("Addition: "+h);
+        System.out.println("Addition: " + h);
 
     }
 
-    public int mul(int a, int b){
+    public int mul(int a, int b) {
         multiply = a * b;
-        return  multiply;
+        return multiply;
     }
-
 
 
     public static void main(String[] args) {
@@ -43,8 +42,8 @@ public class MethodsConcept {
 
         methodsConcept.add(10, 20);
 
-        int f = methodsConcept.mul(10,20);
-        System.out.println("Mul :"+f);
+        int f = methodsConcept.mul(10, 20);
+        System.out.println("Mul :" + f);
 
         methodsConcept.getMethod();
         methodsConcept.getMethod1();

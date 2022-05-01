@@ -2,7 +2,7 @@ package org.matrix.shriniwas.corejava.methods;
 
 public class TestMethodReturnType {
 
-    public int addition(int a , int b) {
+    public int addition(int a, int b) {
         int c = a + b;
         return c;
     }

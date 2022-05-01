@@ -2,7 +2,7 @@ package org.matrix.delta.ganesh.Methods;
 
 public class School1 {
 
-    public Student1 getStudentData(Student1 student1){
+    public Student1 getStudentData(Student1 student1) {
         return student1;
 
     }
@@ -17,10 +17,6 @@ public class School1 {
         System.out.println(Student1.school);
 
         stu1.getStudent();
-
-
-
-
 
 
     }

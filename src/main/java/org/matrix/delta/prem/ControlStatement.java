@@ -2,40 +2,40 @@ package org.matrix.delta.prem;
 
 public class ControlStatement {
     public static void main(String[] args) {
-        char vowel='u';
-        switch (vowel){
-            case'a':
+        char vowel = 'u';
+        switch (vowel) {
+            case 'a':
                 System.out.println("vowel");
                 break;
-            case'e':
+            case 'e':
                 System.out.println("vowel");
                 break;
-            case'i':
+            case 'i':
                 System.out.println("vowel");
                 break;
-            case'o':
+            case 'o':
                 System.out.println("vowel");
                 break;
-            case'u':
+            case 'u':
                 System.out.println("vowel");
                 break;
-            case'A':
+            case 'A':
                 System.out.println("vowel");
                 break;
-            case'E':
+            case 'E':
                 System.out.println("vowel");
                 break;
-            case'I':
+            case 'I':
                 System.out.println("vowel");
                 break;
-            case'O':
+            case 'O':
                 System.out.println("vowel");
                 break;
-            case'U':
+            case 'U':
                 System.out.println("vowel");
                 break;
             default:
-                System.out.println("cnsonant");
+                System.out.println("consonant");
         }
     }
 }

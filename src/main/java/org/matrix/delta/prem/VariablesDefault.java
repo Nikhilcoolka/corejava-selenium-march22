@@ -1,6 +1,6 @@
 package org.matrix.delta.prem;
 
-public class VariablesDefault{
+public class VariablesDefault {
 
     static int i;
     static long l;

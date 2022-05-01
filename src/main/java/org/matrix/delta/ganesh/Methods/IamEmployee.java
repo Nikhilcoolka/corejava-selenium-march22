@@ -6,7 +6,7 @@ public class IamEmployee {
     public String empName = "Ganesh";
     public static String company = "Google";
 
-    public void getEmpData(){
+    public void getEmpData() {
         System.out.println("Accessed class thru other method successfully..");
 
     }

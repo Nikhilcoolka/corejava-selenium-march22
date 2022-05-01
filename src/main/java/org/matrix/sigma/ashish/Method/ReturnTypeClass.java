@@ -6,16 +6,18 @@ public class ReturnTypeClass {
         Employee emp = new Employee();
         return emp;
     }
-    public Employee getEmployee(Employee ee1){
+
+    public Employee getEmployee(Employee ee1) {
 
         return ee1;
     }
-    public String getName(String str){
+
+    public String getName(String str) {
         return str;
 
     }
 
-    public String  getData(){
+    public String getData() {
         return getName("Amit");
     }
 
@@ -26,14 +28,14 @@ public class ReturnTypeClass {
 
         ee.getData();
 
-        ReturnTypeClass obj=new ReturnTypeClass();
-        Employee ee1=new Employee();
+        ReturnTypeClass obj = new ReturnTypeClass();
+        Employee ee1 = new Employee();
         obj.getEmployee(ee1);
 
-        String str1=obj.getName("Ashish Thopate");
+        String str1 = obj.getName("Ashish Thopate");
         System.out.println(str1);
 
-        String str2=obj.getData();
-        System.out.println("new name:-"+str2);
+        String str2 = obj.getData();
+        System.out.println("new name:-" + str2);
     }
 }

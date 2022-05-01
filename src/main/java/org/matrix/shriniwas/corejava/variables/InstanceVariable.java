@@ -4,8 +4,8 @@ import org.matrix.shriniwas.corejava.Employee;
 
 public class InstanceVariable {
 
-     int age = 100;  // This is a non static instance variable
-     // static int age = 100; // This is a static instance variable
+    int age = 100;  // This is a non static instance variable
+    // static int age = 100; // This is a static instance variable
 
     /* TestInstanceVariable() {
         System.out.println(age);
@@ -17,7 +17,7 @@ public class InstanceVariable {
 
     public static void main(String[] args) {
         // Non static variables can not be used directly inside static methods
-         // System.out.println(age);
+        // System.out.println(age);
 
         // Object Creation
         InstanceVariable obj = new InstanceVariable();

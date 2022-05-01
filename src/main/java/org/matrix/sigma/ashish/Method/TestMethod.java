@@ -2,7 +2,7 @@ package org.matrix.sigma.ashish.Method;
 
 public class TestMethod {
     public static void main(String[] args) {
-        TestMethod TM=new TestMethod();
+        TestMethod TM = new TestMethod();
         //ObjectMethod OM=new ObjectMethod();
 
         TM.m2();
@@ -18,7 +18,7 @@ public class TestMethod {
     }
 
     //static method
-    public static void m1(){
+    public static void m1() {
         System.out.println("I am in static method m2");
     }
 
@@ -27,14 +27,14 @@ public class TestMethod {
         System.out.println("I am an instance m1 method");
     }
 
-    //Method with parameter
-    public void m3(int age){
-        System.out.println("My Age is   "+age);
+    //method with parameter
+    public void m3(int age) {
+        System.out.println("My Age is   " + age);
     }
 
     //static method with parameter
-    public static void m4(int age){
-        System.out.println("My static age is  "+age);
+    public static void m4(int age) {
+        System.out.println("My static age is  " + age);
     }
 
 }

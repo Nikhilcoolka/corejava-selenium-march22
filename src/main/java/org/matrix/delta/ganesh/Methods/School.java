@@ -4,7 +4,7 @@ import org.matrix.delta.ganesh.PackageConcept.ProtectedClass;
 
 public class School extends ProtectedClass {
 
-    public static Student getStudentData(){
+    public static Student getStudentData() {
         return new Student();
 
     }
