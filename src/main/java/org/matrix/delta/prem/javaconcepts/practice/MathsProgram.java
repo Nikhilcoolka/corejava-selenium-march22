@@ -1,4 +1,4 @@
-package org.matrix.delta.prem;
+package org.matrix.delta.prem.javaconcepts.practice;
 
 public class MathsProgram {
     public static void main(String[] args) {
