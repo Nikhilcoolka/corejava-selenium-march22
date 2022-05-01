@@ -3,7 +3,7 @@ package org.matrix.shriniwas.corejava.arrayconcept;
 public class TestArray {
 
     public static void main(String[] args) {
-        int [] arr = new int[3];
+        int[] arr = new int[3];
         arr[0] = 10; // 0th index
         arr[1] = 20; // 1st index
         arr[2] = 30; // 2nd index
@@ -20,11 +20,11 @@ public class TestArray {
 
         // Using for each loop
         System.out.println("---- For each Loop ----");
-        for(int i : arr) {
+        for (int i : arr) {
             System.out.println(i);
         }
 
-        String [] sArr = new String[2];
+        String[] sArr = new String[2];
         sArr[0] = "Shri1";
         sArr[1] = "Shri2";
 
@@ -32,7 +32,7 @@ public class TestArray {
             System.out.println(str);
         }
 
-        Employee [] empArr = new Employee[3];
+        Employee[] empArr = new Employee[3];
         Employee e1 = new Employee("Shri1", 10);
         Employee e2 = new Employee("Shri2", 20);
         Employee e3 = new Employee("Shri3", 30);
@@ -42,19 +42,19 @@ public class TestArray {
         empArr[2] = e3;
 
         // Using For each loop
-        for (Employee emp :  empArr) {
-            System.out.println(emp.name + "---->" +emp.id);
+        for (Employee emp : empArr) {
+            System.out.println(emp.name + "---->" + emp.id);
         }
 
         // Using for loop
-        for(int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.println(empArr[i].name + "--->" + empArr[i].id);
         }
 
-        String [] strArr = {"Shri1", "Shri2"};
+        String[] strArr = {"Shri1", "Shri2"};
 
         // Using For each loop
-        for (String st :  strArr) {
+        for (String st : strArr) {
             System.out.println(st);
         }
     }
