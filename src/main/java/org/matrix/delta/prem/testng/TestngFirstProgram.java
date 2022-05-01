@@ -13,23 +13,24 @@ import java.util.Properties;
 public class TestngFirstProgram {
 
     public static String readProperty(String key) throws IOException {
-        FileInputStream fin = new FileInputStream("E:\\corejava-selenium-march22\\src\\main\\java\\org\\matrix\\shriniwas\\selenium\\config.properties");
+        FileInputStream fin = new FileInputStream("F:\\automation new\\corejava-selenium-march22\\src\\main\\java\\org\\matrix\\delta\\prem\\selenium\\config.properties");
         Properties prop = new Properties();
         prop.load(fin);
-        String value = prop.getProperty(key); //prop.getProperty("url"); //prop.getProperty("username");
+        String value = prop.getProperty(key);
         return value;
     }
 
     @Test
-    public void verifyLogin() throws IOException {
+        public void verifylogin() throws IOException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.get(TestngFirstProgram.readProperty("url")); // driver.get("https://demo.nopcommerce.com/");
+        driver.get(readProperty("url")); // driver.get("https://demo.nopcommerce.com/");
         driver.manage().window().maximize();
 
-        driver.findElement(By.id("user-name")).sendKeys(TestngFirstProgram.readProperty("username")); // sendKeys("standard_user");
-        driver.findElement(By.id("password")).sendKeys(TestngFirstProgram.readProperty("password"));  // sendkeys("secret_sauce");
+        driver.findElement(By.id("user-name")).sendKeys(readProperty("username")); // sendKeys("standard_user");
+        driver.findElement(By.id("password")).sendKeys(readProperty("password"));  // sendkeys("secret_sauce");
     }
+
 }
 
 
