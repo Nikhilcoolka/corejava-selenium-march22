@@ -1,5 +1,6 @@
 package org.matrix.lambda.akasht.corejava.selenium;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,7 +22,7 @@ public class GoogleSearch {
 
         public static void main(String[] args) throws IOException, InterruptedException {
 
-            WebDriver.ChromeDriver().setup();
+            WebDriverManager.chromedriver().setup();
             WebDriver driver = new ChromeDriver();
             driver.get(readProperty("url"));
             driver.manage().window().maximize();

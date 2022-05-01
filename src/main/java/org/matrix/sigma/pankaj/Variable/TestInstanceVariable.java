@@ -1,6 +1,6 @@
 package org.matrix.sigma.pankaj.Variable;
 
-import org.matrix.sigma.pankaj.Employee;
+import org.matrix.sigma.pankaj.corejava.Employee;
 
 public class TestInstanceVariable {
  int age = 30;

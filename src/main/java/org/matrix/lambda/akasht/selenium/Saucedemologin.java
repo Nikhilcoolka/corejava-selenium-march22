@@ -1,4 +1,4 @@
-package org.matrix.lambda.akasht.corejava.selenium;
+package org.matrix.lambda.akasht.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,13 +24,13 @@ public class Saucedemologin {
         driver.findElement(By.xpath("//input[@id='login-button']")).click();
 
         String actualTitle = driver.getTitle();
-        String expectedTitle = ReadOnlyProperty("title");
+        // String expectedTitle = ReadOnlyProperty("title");
 
-        if (actualTitle.equals(expectedTitle)) {
+        /*if (actualTitle.equals(expectedTitle)) {
             System.out.println("login successfully");
         } else {
             System.out.println("Test case fail Unable to login");
-        }
+        }*/
 
         Thread.sleep(2000);
         driver.close();

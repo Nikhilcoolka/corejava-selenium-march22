@@ -30,16 +30,10 @@ public class TestngFirstProgramme {
 
         driver.findElement(By.id("user-name")).sendKeys(readproperty("Username"));
         driver.findElement(By.id("password")).sendKeys(readproperty("Passward"));
-<<<<<<< HEAD
+
         driver.findElement(By.id("login-button")).click();
         driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
         driver.findElement(By.xpath("//span[@class=\"shopping_cart_badge\"]"));
-=======
-
-
-
-
->>>>>>> origin/MAT-35-PankajK
 
     }
 
