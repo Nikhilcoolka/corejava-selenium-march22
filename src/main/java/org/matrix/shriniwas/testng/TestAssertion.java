@@ -1,4 +1,4 @@
-package org.matrix.shriniwas.selenium.testngconcepts;
+package org.matrix.shriniwas.testng;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
