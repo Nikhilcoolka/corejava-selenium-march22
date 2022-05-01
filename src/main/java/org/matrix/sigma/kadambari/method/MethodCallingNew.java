@@ -1,4 +1,6 @@
-package org.matrix.sigma.kadambari;
+package org.matrix.sigma.kadambari.method;
+
+import org.matrix.sigma.kadambari.Employee;
 
 public class MethodCallingNew {
     public void m1() {

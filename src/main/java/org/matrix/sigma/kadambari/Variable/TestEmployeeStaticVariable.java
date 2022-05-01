@@ -1,4 +1,4 @@
-package org.matrix.sigma.kadambari;
+package org.matrix.sigma.kadambari.Variable;
 
 public class TestEmployeeStaticVariable {
 
