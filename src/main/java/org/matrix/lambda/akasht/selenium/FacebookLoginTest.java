@@ -1,4 +1,4 @@
-package org.matrix.lambda.akasht.corejava.selenium;
+package org.matrix.lambda.akasht.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
