@@ -2,10 +2,10 @@ package org.matrix.lambda.akasht.corejava.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class FacebookLogin {
-
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -27,19 +27,21 @@ public class FacebookLogin {
         driver.findElement(By.id("pass")).sendKeys("Akash@123");
 
         Thread.sleep(2000);
-        driver.findElement(By.name("Login")).click();
+        driver.findElement(By.name("login")).click();
 
-        //WebElement errorMessage = driver.findElement(By.xpath("//div[text()='Login was unsuccessful. Please correct the errors and try again.']"));
-        //boolean status = errorMessage.isDisplayed(); // True/False
+        WebElement errorMessage = driver.findElement(By.xpath("//div[text()='Login was unsuccessful. Please correct the errors and try again.']"));
+        boolean status = errorMessage.isDisplayed(); // True/False
 
-        //if (status) {
-        //System.out.println("Test case pass");
-        //} else {
-        //System.out.println("Test case fail");
+        status = false;
+        if (status) {
+            System.out.println("Test case fail");
+        } else {
+            System.out.println("Test case pass");
+        }
+
+        Thread.sleep(4000);
+        driver.close();//
     }
-
-    //Thread.sleep(4000);
-    //driver.close();//
 }
 
 
