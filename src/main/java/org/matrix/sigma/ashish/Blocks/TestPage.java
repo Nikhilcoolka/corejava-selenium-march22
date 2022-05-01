@@ -1,4 +1,4 @@
-package org.matrix.sigma.ashish.Method;
+package org.matrix.sigma.ashish.Blocks;
 
 public class TestPage {
     public void login() {

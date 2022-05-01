@@ -1,4 +1,6 @@
-package org.matrix.sigma.ashish.Method;
+package org.matrix.sigma.ashish.Blocks;
+
+import org.matrix.sigma.ashish.Method.Employee;
 
 public class UseThis {
     Employee ee=new Employee();

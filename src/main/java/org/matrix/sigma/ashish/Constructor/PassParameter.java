@@ -1,4 +1,4 @@
-package org.matrix.sigma.ashish.Method;
+package org.matrix.sigma.ashish.Constructor;
 
 public class PassParameter {
     public static void main(String[] args) {
