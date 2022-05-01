@@ -3,14 +3,14 @@ package org.matrix.lambda.nisha;
 public class TestVariables {
 
     public static void main(String[] args) {
-        int n =7;
+        int n = 7;
         /*
         int= Primitive datatype
         n= Variable
         7= Value
          */
 
-        String str ="Singam";
+        String str = "Singam";
         /*
         String= Non-primitive datatype/Class
         str= Variable

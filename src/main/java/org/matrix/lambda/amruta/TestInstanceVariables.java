@@ -1,9 +1,9 @@
 package org.matrix.lambda.amruta;
 
 public class TestInstanceVariables {
-    int age=20;
+    int age = 20;
 
-    public void display(){
+    public void display() {
         System.out.println(age);
     }
 
