@@ -1,10 +1,10 @@
 package org.matrix.lambda.akasht;
 
 /*This is the first class created
-* This is the Documentation Comment
-*
-*@author: Akash Toradmalle
-* */
+ * This is the Documentation Comment
+ *
+ *@author: Akash Toradmalle
+ * */
 
 public class HelloWorld {
 

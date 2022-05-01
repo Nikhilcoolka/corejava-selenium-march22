@@ -9,6 +9,7 @@ public class TestDataTypeAndVariables {
     static double db;
     static char c;
     static boolean bb;
+
     public static void main(String[] args) {
         System.out.println(i);
         System.out.println(l);
