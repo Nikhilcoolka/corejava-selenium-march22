@@ -1,4 +1,4 @@
-package org.matrix.alpha.nikhilesh;
+package org.matrix.alpha.nikhilesh.Variables;
 
 public class MethodCall {
     String sr = "Nikhil";
