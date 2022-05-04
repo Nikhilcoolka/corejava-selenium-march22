@@ -19,9 +19,9 @@ public class WebElementMethods {
         driver.manage().window().maximize();
 
        // driver.findElement(By.id("user-name")).sendKeys("standard_user");
-        WebElement userName = driver.findElement(By.id("user-name"));
-        userName.sendKeys("standard_user");
-        userName.getText();
+        WebElement txtUserName = driver.findElement(By.id("user-name"));
+        txtUserName.sendKeys("standard_user");
+        txtUserName.getText();
 
         WebElement el = driver.findElement(By.id("abc"));
         String text = el.getText();

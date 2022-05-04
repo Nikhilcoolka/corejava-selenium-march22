@@ -14,7 +14,6 @@ public class NewMethods {
         System.out.println(a*b);
         space();
         System.out.println("This Value is Instance Variable ");
-
         System.out.println(this.a+this.b);//It Can use Value For Instance Variable ( a=500,b=100)
         space();
         System.out.println("This is Non-Static Method");
@@ -40,7 +39,7 @@ public static void space() {
         NewMethods nm=new NewMethods(); //Obj Ref Creation
         nm.display(10,20); //Parameter Initialized By Using Obj Ref
         add(25,50);//Parameter Initialized By the Directly
-        space();
+        nm.space();
         nm.add1();
     }
 

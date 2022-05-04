@@ -2,7 +2,7 @@ package org.matrix.omega.samir;
 
 import java.util.Scanner;
 
-class HelloWorld {
+class HelloWorld extends InstanceVariables {
 
     void employeeDetails() {
         int empNumber = 1, empsalary = 5000;
@@ -11,6 +11,7 @@ class HelloWorld {
         int no = sc.nextInt();
         System.out.println("hii");
         String empName = "samir", empLocation = "pune";
+        System.out.println(super.companyName);
         System.out.println("Your entered Number " + no + "empNumber=" + empNumber + " empsalary =   " + empsalary + " empName = " + empName + " empLocation= " + empLocation + "  " + empName.charAt(2) + " empName Lenght = " + empName.length());
     }
 

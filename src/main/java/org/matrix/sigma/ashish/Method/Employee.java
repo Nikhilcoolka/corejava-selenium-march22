@@ -11,7 +11,7 @@ public class Employee {
             System.out.println("Empid  :-"+empid);
         }
         public void m1(){
-            System.out.println("I am in Employee M1 method");
+            System.out.println("I am in Employee M1 Method");
         }
 
     public static void main(String[] args) {
