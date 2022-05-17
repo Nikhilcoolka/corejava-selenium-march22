@@ -1,12 +1,12 @@
-package org.matrix.lambda.nisha.basics;
+package org.matrix.lambda.nisha.variables;
 
-
+/*
 class Employee {
 
 }
+ */
 
-
-public class TestDefaultValues {
+public class DefaultValues {
 
     /*
         Access specifiers or modifiers
@@ -31,7 +31,7 @@ public class TestDefaultValues {
     static char c;      // char
     static boolean bb;  // bb=false
     static String ni;   // ni=null
-    static Employee ee; // Employee is a class=null
+    //static Employee ee; // Employee is a class=null
 
     public static void main(String[] args) {
         System.out.println(b);
@@ -43,6 +43,6 @@ public class TestDefaultValues {
         System.out.println(c);
         System.out.println(bb);
         System.out.println(ni);
-        System.out.println(ee);
+        //System.out.println(ee);
     }
 }
