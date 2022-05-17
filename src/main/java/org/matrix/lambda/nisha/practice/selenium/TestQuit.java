@@ -1,4 +1,4 @@
-package org.matrix.lambda.nisha.practice.other;
+package org.matrix.lambda.nisha.practice.selenium;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
