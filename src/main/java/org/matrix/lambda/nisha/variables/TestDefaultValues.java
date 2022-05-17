@@ -6,7 +6,7 @@ class Employee {
 }
  */
 
-public class DefaultValues {
+public class TestDefaultValues {
 
     /*
         Access specifiers or modifiers
