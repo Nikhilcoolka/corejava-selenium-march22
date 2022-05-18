@@ -1,11 +1,9 @@
-package org.matrix.lambda.nisha.selenium;
+package org.matrix.lambda.nisha.selenium.testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestFirstScript {
 
@@ -13,12 +11,15 @@ public class TestFirstScript {
 
         System.setProperty("webdriver.chrome.driver", "D:\\Ni\\Downloads\\chromedriver_win32\\chromedriver.exe");
 
-        WebDriver driver = new ChromeDriver();           // Driver Drives the chrome page for Intellij
-        // WebDriver is used for all web browsers like chrome, firefox, internet explorer
 
-        // WebDriver driver = new FirefoxDriver();
-        // WebDriver driver = new EdgeDriver();
+        WebDriver driver = new ChromeDriver();
 
+      /*
+        Driver Drives the chrome page for Intellij
+        WebDriver is used for all web browsers like chrome, firefox, internet explorer
+        WebDriver driver = new FirefoxDriver();
+        WebDriver driver = new EdgeDriver();
+      */
         driver.get("https://demo.nopcommerce.com/");        // Chrome website
 
         driver.manage().window().maximize();                // Maximize the window
@@ -51,5 +52,13 @@ public class TestFirstScript {
     }
 }
 
+
+
+
+
+/*
+    ChromeDriver driver = new ChromeDriver();
+    FirefoxDriver driver = new FirefoxDriver();
+*/
 
 
