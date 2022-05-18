@@ -11,3 +11,21 @@ public class InstanceVariable {
     }
 
 }
+
+
+
+
+
+
+
+
+/*
+
+---------------------Instance Variable------------------------------
+
+The variables which are present inside the class but outside the methods/constructors/blocks
+Scope: Inside whole class
+Memory allocation: Whenever we create an Object
+Store: Heap memory
+
+ */
