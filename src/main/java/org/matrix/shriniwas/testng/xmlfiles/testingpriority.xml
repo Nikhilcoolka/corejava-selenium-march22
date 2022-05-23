@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="AddToCartTest">
+        <classes>
+            <class name="org.matrix.shriniwas.testng.TestPriority">
+                <methods>
+                    <include name="b"/>
+                    <include name="a"/>
+                    <include name="c"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

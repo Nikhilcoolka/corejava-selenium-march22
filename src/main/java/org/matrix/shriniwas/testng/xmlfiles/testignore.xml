@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="IgnoreTest" enabled="false">
+        <classes>
+            <class name="org.matrix.shriniwas.testng.TestIgnoreTests" />
+            <class name="org.matrix.shriniwas.testng.TestIgnoreTests" />
+            <class name="org.matrix.shriniwas.testng.TestIgnoreTests" />
+            <class name="org.matrix.shriniwas.testng.TestIgnoreTests" />
+        </classes>
+    </test>
+    <test name="IgnoreTest1">
+        <classes>
+            <class name="org.matrix.shriniwas.testng.TestIgnoreTests" />
+            <class name="org.matrix.shriniwas.testng.TestIgnoreTests" />
+            <class name="org.matrix.shriniwas.testng.TestIgnoreTests" />
+            <class name="org.matrix.shriniwas.testng.TestIgnoreTests" />
+        </classes>
+    </test>
+</suite>
