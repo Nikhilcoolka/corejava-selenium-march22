@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browser" value="firefox"></parameter>
+    <test name="TestParameters">
+        <parameter name="username" value="shriniwas"></parameter>
+        <parameter name="password" value="shri123"></parameter>
+        <classes>
+            <class name="org.matrix.shriniwas.testng.TestParameters" />
+        </classes>
+    </test>
+
+    <test name="TestParameters">
+        <parameter name="username" value="shriniwas1asdasdasd"></parameter>
+        <parameter name="password" value="shri123asddasdasf"></parameter>
+        <classes>
+            <class name="org.matrix.shriniwas.testng.TestParameters" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <groups>
+        <run>
+            <include name="smoke"/>
+            <exclude name="regression"/>
+        </run>
+    </groups>
+    <test name="TestGroup1">
+        <classes>
+            <class name="org.matrix.shriniwas.testng.TestGrouping1" />
+            <class name="org.matrix.shriniwas.testng.TestGrouping2" />
+        </classes>
+    </test>
+
+    <test name="TestGroup2">
+        <classes>
+            <class name="org.matrix.shriniwas.testng.TestGrouping3"/>
+        </classes>
+    </test>
+</suite>
