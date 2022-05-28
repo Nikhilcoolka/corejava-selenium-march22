@@ -1,0 +1,16 @@
+<suite name="All Test Suite">
+    <listeners>
+
+        <listener class-name="org.matrix.sigma.niksangli.testng.TestListner"></listener>
+
+    </listeners>
+
+    <test name="Test Report">
+        <classes>
+            <class name="org.matrix.sigma.niksangli.testng.Usermethod">
+
+            </class>
+
+        </classes>
+    </test>
+</suite>

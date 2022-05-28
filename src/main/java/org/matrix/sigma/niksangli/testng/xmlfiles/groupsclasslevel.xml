@@ -1,0 +1,16 @@
+
+<suite name="All Test Suite">
+
+<groups>
+    <run>
+        <include name="Functional"/>
+    </run>
+
+</groups>
+    <test name="TG1">
+
+        <classes>
+            <class name="org.matrix.sigma.niksangli.testng.Testgroup1"/>
+        </classes>
+    </test>
+</suite>

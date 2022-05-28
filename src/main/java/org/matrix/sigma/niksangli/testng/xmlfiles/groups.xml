@@ -1,0 +1,33 @@
+<suite name="All Test Suite">
+
+    <test name="TG1">
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <exclude name="Regression"/>
+
+            </run>
+        </groups>
+        <classes>
+
+            <class name="org.matrix.sigma.niksangli.testng.Testgroup1"/>
+            <class name="org.matrix.sigma.niksangli.testng.Testgroup2"/>
+
+        </classes>
+    </test>
+
+    <test name="TG2">
+        <groups>
+            <run>
+                <include name="sanity"/>
+            </run>
+        </groups>
+        <classes>
+
+            <class name="org.matrix.sigma.niksangli.testng.Testgroup2"/>
+
+        </classes>
+    </test>
+
+
+</suite>
