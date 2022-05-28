@@ -1,4 +1,4 @@
-package org.matrix.sigma.niksangli.selenium;
+package org.matrix.sigma.niksangli.selenium.Dropdowns;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
